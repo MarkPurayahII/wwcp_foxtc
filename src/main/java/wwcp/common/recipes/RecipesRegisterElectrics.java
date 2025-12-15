@@ -5,8 +5,6 @@ import net.minecraft.item.ItemStack;
 import train.common.api.crafting.ITierCraftingManager;
 import train.common.core.handlers.AbstractRecipeHandler;
 import train.common.core.managers.TierRecipeManager;
-import train.common.library.ItemIDs;
-import wwcp.common.library.AddonRollingStockItems;
 
 import java.util.Iterator;
 

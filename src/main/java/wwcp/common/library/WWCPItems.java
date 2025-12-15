@@ -7,11 +7,12 @@ import train.common.library.TypeOfRollingStock;
  * Enum class for the Rolling stock item
  * DO NOT ADD OTHER ITEMS BESIDES ROLLING STOCK ITEMS HERE
  */
-public enum AddonRollingStockItems
+public enum WWCPItems
 {
     WWCPShopShunter("template-icon", train.common.library.TypeOfRollingStock.DIESEL, "WWCP"),
     SD90MACH("template-icon", train.common.library.TypeOfRollingStock.DIESEL, "American"),
-    Eurofima1stClassOpen("item.compartmentEurofima", train.common.library.TypeOfRollingStock.PASSENGER,"European")
+    Eurofima1stClassOpen("item.compartmentEurofima", train.common.library.TypeOfRollingStock.PASSENGER,"European"),
+    BR103("item.wwcp.BR103", train.common.library.TypeOfRollingStock.ELECTRIC, "European")
     //minecraftTemplateUntradeable("template-icon", STEAM)
     ;
 
@@ -22,7 +23,7 @@ public enum AddonRollingStockItems
      * @param tabName
      * @param amountForEmerald amount for Emerald
      */
-    AddonRollingStockItems(String iconName, train.common.library.TypeOfRollingStock typeOfRollingStock, String tabName, int amountForEmerald)
+    WWCPItems(String iconName, train.common.library.TypeOfRollingStock typeOfRollingStock, String tabName, int amountForEmerald)
     {
         this.iconName = iconName;
         TypeOfRollingStock = typeOfRollingStock;
@@ -31,7 +32,7 @@ public enum AddonRollingStockItems
         ItemName = this.name();
     }
 
-    AddonRollingStockItems(String itemName, String iconName, train.common.library.TypeOfRollingStock typeOfRollingStock, String tabName, int amountForEmerald)
+    WWCPItems(String itemName, String iconName, train.common.library.TypeOfRollingStock typeOfRollingStock, String tabName, int amountForEmerald)
     {
         this.iconName = iconName;
         TypeOfRollingStock = typeOfRollingStock;
@@ -46,7 +47,7 @@ public enum AddonRollingStockItems
      * @param tabName the tab the stock should be assigend to;
      */
 
-    AddonRollingStockItems(String iconName, TypeOfRollingStock typeOfRollingStock, String tabName)
+    WWCPItems(String iconName, TypeOfRollingStock typeOfRollingStock, String tabName)
     {
         this.iconName = iconName;
         TypeOfRollingStock = typeOfRollingStock;
@@ -55,7 +56,7 @@ public enum AddonRollingStockItems
         ItemName = this.name();
     }
 
-    AddonRollingStockItems(String itemName, String iconName, TypeOfRollingStock typeOfRollingStock, String tabName)
+    WWCPItems(String itemName, String iconName, TypeOfRollingStock typeOfRollingStock, String tabName)
     {
         this.iconName = iconName;
         TypeOfRollingStock = typeOfRollingStock;

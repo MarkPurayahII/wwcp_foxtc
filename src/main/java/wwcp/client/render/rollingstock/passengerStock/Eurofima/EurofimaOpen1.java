@@ -3104,11 +3104,11 @@ public class EurofimaOpen1 extends ModelConverter //Same as Filename
 		super.render(entity, f, f1, f2, f3, f4, f5);
 		Tessellator.bindTexture(new ResourceLocation(Info.modID, "textures/bogies/Eurofimabogie.png"));
 		GL11.glPushMatrix();
-		GL11.glTranslatef(2.9f,0,0);
+		GL11.glTranslatef(4.55f,0,0);
 		bogie.render(entity, f, f1, f2, f3, f4, f5);
 		GL11.glPopMatrix();
 		GL11.glPushMatrix();
-		GL11.glTranslatef(-3.6f,0,0);
+		GL11.glTranslatef(-4.62f,0,0);
 		bogie.render(entity, f, f1, f2, f3, f4, f5);
 		GL11.glPopMatrix();
 	}

@@ -14,12 +14,6 @@ public class ItemAddonPackRollingStock extends ItemAbstractRollingStock
 {
     private final List<String> subtext = new ArrayList<>();
 
-    public ItemAddonPackRollingStock(String iconName, TypeOfRollingStock trainType)
-    {
-        super(iconName);
-        setCreativeTab(wwcp.WWCP);
-    }
-
     public ItemAddonPackRollingStock(String iconName, TypeOfRollingStock trainType, String CreativeTab) {
         super(iconName);
         switch (CreativeTab) {

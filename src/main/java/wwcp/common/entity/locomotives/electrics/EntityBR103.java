@@ -1,59 +1,59 @@
-package wwcp.common.entity.passenger;
+package wwcp.common.entity.locomotives.electrics;
 
 import net.minecraft.entity.item.EntityMinecart;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import train.client.render.register.TrainRenderRecord;
 import train.common.Traincraft;
-import train.common.api.AbstractPassengerCar;
-import train.common.api.EntityRollingStock;
+import train.common.api.ElectricTrain;
 import train.common.core.util.TraincraftUtil;
-import wwcp.client.render.rollingstock.locomotives.diesels.SD90MACH;
-import wwcp.client.render.rollingstock.passengerStock.Eurofima.EurofimaOpen1;
+import train.common.library.sounds.SoundRecord;
+import wwcp.client.render.rollingstock.locomotives.electrics.BR103;
 import wwcp.common.core.handler.Transport;
-import wwcp.common.entity.locomotives.diesels.EntitySD90MACH;
+import wwcp.common.entity.passenger.EntityEurofima1stClass;
 
-public class EntityEurofima1stClass extends AbstractPassengerCar {
+public class EntityBR103 extends ElectricTrain {
 
-    public EntityEurofima1stClass(World world) {
-        super(world);
-        InsertTexture(0, "Eurofima 1st Class");
+    public EntityBR103(World world) {
+        super(world);    
+        InsertTexture(0, "BR103");
+
     }
-
+    
     public void updateRiderPosition() {
-        TraincraftUtil.updateRider(this, 5f, 0f, 0f);
+        TraincraftUtil.updateRider(this, 7.8f, 0.2f, -0.15f);
     }
 
     public float getOptimalDistance(EntityMinecart cart) {
-        return 6.5F;
+        return 0.95F;
     }
 
     @Override
     public String transportCountry() {
-        return Transport.EurofimaOpen1().country;
+        return Transport.BR103().country;
     }
 
     @Override
     public String transportYear() {
-        return Transport.EurofimaOpen1().year;
+        return Transport.BR103().year;
     }
 
     public String getInventoryName() {
-        return Transport.EurofimaOpen1().name;
+        return Transport.BR103().name;
     }
 
     @Override
     public boolean isFictional() {
-        return Transport.EurofimaOpen1().fictional;
+        return Transport.BR103().fictional;
     }
 
     @Override
     public void onRenderInsertRecord() {
         Traincraft.traincraftRegistry.RegisterRollingStockModel(
                 new TrainRenderRecord(wwcp.common.library.Info.modID,
-                        EntityEurofima1stClass.class, new EurofimaOpen1(),
-                        "Eurofima1stClass",
-                        new float[]{0f, 0.15F, 0.0F},
+                        EntityBR103.class, new BR103(),
+                        "BR103",
+                        new float[]{-4f, 0.15F, 0.0F},
                         new float[]{0F, 180F, 180F},
                         null) {
                     @Override
@@ -61,10 +61,16 @@ public class EntityEurofima1stClass extends AbstractPassengerCar {
                         String texturePath = "";
                         switch (colorAsString.toLowerCase()) {
                             case "yellow":
-                                texturePath = "textures/passengerstock/Eurofima/EurofimaOpen/Class1/O1Base";
+                                texturePath = "textures/locomotive/Electric/BR103/BR103Lufthansa";
                                 break;
                             case "orange":
-                                texturePath = "textures/passengerstock/Eurofima/EurofimaOpen/Class1/O1SBB";
+                                texturePath = "textures/locomotive/Electric/BR103/BR103Base";
+                                break;
+                            case "blue":
+                                texturePath = "textures/locomotive/Electric/BR103/FullRed";
+                                break;
+                            case "red":
+                                texturePath = "textures/locomotive/Electric/BR103/FullRed1";
                                 break;
                         }
                         texturePath += ".png";
@@ -72,5 +78,10 @@ public class EntityEurofima1stClass extends AbstractPassengerCar {
                         return new ResourceLocation(wwcp.common.library.Info.modID, texturePath);
                     }
                 });
+    }
+
+    @Override
+    public SoundRecord getSoundRecord() {
+        return null;
     }
 }

@@ -39,7 +39,7 @@ public class Transport {
             additionalTextTitle2 = AditionalText2Title;
             additionalText2 = AditionalText2;
             tractive_effort = TractiveEffort;
-            weightinKGs = (WeightinTons * 100);
+            weightinKGs = (WeightinTons);
             topSpeed = TopSpeed;
             metric_horsepower = MetricHorsepower;
             backTopSpeed = BackTopSpeed;
@@ -83,7 +83,7 @@ public class Transport {
             additionalTextTitle2 = AditionalText2Title;
             additionalText2 = AditionalText2;
             tractive_effort = TractiveEffort;
-            weightinKGs = (WeightinTons * 100);
+            weightinKGs = (WeightinTons);
             topSpeed = TopSpeed;
             metric_horsepower = MetricHorsepower;
             backTopSpeed = TopSpeed;
@@ -122,7 +122,7 @@ public class Transport {
             additionalText = AditionalText;
             additionalTextTitle2 = AditionalText2Title;
             additionalText2 = AditionalText2;
-            weightinKGs = (WeightinTons * 100);
+            weightinKGs = (WeightinTons);
             topSpeed = TopSpeed;
             fictional = Fictional;
             backTopSpeed = TopSpeed;
@@ -430,8 +430,8 @@ public class Transport {
 
     //E94
     public static LocomotiveNoBackspeed BR103() {
-        return new LocomotiveNoBackspeed("BR103", "Europe", "1940-1995", "Electric",
-                nick, " Green Crocodile", type, " Freight Locomotive",
+        return new LocomotiveNoBackspeed("BR103", "Germany", "1940-1995", "Electric",
+                nick, "", type, " Passenger Locomotive",
                 40000.0f, 4429.0f, 118.5f, 100f, false, true, 0);
     }
 

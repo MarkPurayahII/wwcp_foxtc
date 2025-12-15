@@ -17,6 +17,7 @@ import wwcp.common.core.handler.AddonPackRollingStockEntityHandler;
 import wwcp.common.creativetabs.CreativeTabAddonPack;
 import wwcp.common.library.AddonPackItems;
 import wwcp.common.library.Info;
+import wwcp.common.library.WWCPItems;
 import wwcp.common.recipes.RecipesRegisterDiesel;
 
 
@@ -36,7 +37,7 @@ public class wwcp
     public void preInit(FMLPreInitializationEvent event)
     {
         addonLog.info("preInit Addon Pack -" + Info.modName);
-        European = new CreativeTabAddonPack(CreativeTabs.getNextID(), "WWCP Europe", Items.boat);
+        European = new CreativeTabAddonPack(CreativeTabs.getNextID(), "WWCP Europe", Items.blaze_powder);
         America = new CreativeTabAddonPack(CreativeTabs.getNextID(), "WWCP America", Items.diamond);
         WWCP = new CreativeTabAddonPack(CreativeTabs.getNextID(), "WWCP Special", Items.diamond_boots);
 

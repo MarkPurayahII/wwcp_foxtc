@@ -279,6 +279,7 @@ item.tc:minecartTwoBil	TwoBil	com.jcirmodelsquad.tcjcir.vehicles.locomotives.ele
 item.tc:minecartW_A11	SEC W-A11	com.jcirmodelsquad.tcjcir.vehicles.locomotives.eletric.ElectricW_A11	W_A11_
 item.tc:minecartW_A55	SEC W-A55	com.jcirmodelsquad.tcjcir.vehicles.locomotives.eletric.ElectricW_A55	W_A55_
 item.tc:minecartW_A55_Combine	SEC W-A55 Combine	com.jcirmodelsquad.tcjcir.vehicles.locomotives.eletric.ElectricW_A55_Combine	W_A55_Combine_
+item.wwcp:BR103	BR103	wwcp.common.entity.locomotives.electrics.EntityBR103	BR103
 item.tc:minecartLocoDD35B	DD35 B Unit	train.common.entity.rollingStock.EntityBUnitDD35	dd35b_
 item.tc:minecartBoxCartPRR	Freight Box Cart PRR	train.common.entity.rollingStock.freight.EntityBoxCartPRR	PRR_X31a
 item.tc:minecartBoxCartUS	Freight Box Cart US	train.common.entity.rollingStock.freight.EntityBoxCartUS	boxCartUS_
