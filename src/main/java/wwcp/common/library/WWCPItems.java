@@ -13,6 +13,7 @@ public enum WWCPItems
     WWCPShopShunter("DefaultNormal", train.common.library.TypeOfRollingStock.DIESEL, "WWCP"),
     SD90MACH("DefaultNormal", train.common.library.TypeOfRollingStock.DIESEL, "American"),
     Eurofima1stClassOpen("item.compartmentEurofima", train.common.library.TypeOfRollingStock.PASSENGER,"European"),
+    Eurofima1stClassCompartment("item.compartmentEurofima", train.common.library.TypeOfRollingStock.PASSENGER,"European"),
     BR103("item.BR103", train.common.library.TypeOfRollingStock.ELECTRIC, "European"),
     ChristmasBR01("item.ChristmasBR01", train.common.library.TypeOfRollingStock.STEAM, "WWCP"),
     T32TenderChristmas("DefaultChristmas",train.common.library.TypeOfRollingStock.FREIGHT, "WWCP"),

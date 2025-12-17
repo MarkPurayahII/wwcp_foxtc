@@ -1,58 +1,56 @@
-package wwcp.common.entity.locomotives.electrics;
+package wwcp.common.entity.passenger.Eurofima;
 
 import net.minecraft.entity.item.EntityMinecart;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import train.client.render.register.TrainRenderRecord;
 import train.common.Traincraft;
-import train.common.api.ElectricTrain;
+import train.common.api.AbstractPassengerCar;
 import train.common.core.util.TraincraftUtil;
-import train.common.library.EnumSounds;
-import train.common.library.sounds.SoundRecord;
-import wwcp.client.render.rollingstock.locomotives.electrics.BR103;
+import wwcp.client.render.rollingstock.passengerStock.Eurofima.EurofimaOpen1;
 import wwcp.common.core.handler.Transport;
 
-public class EntityBR103 extends ElectricTrain {
+public class EntityEurofima2ndClassCompartment extends AbstractPassengerCar {
 
-    public EntityBR103(World world) {
-        super(world);    
-        InsertTexture(0, "BR103");
+    public EntityEurofima2ndClassCompartment(World world) {
+        super(world);
+        InsertTexture(0, "Eurofima 1st Class");
     }
-    
+
     public void updateRiderPosition() {
-        TraincraftUtil.updateRider(this, 7.8f, 0.2f, -0.15f);
+        TraincraftUtil.updateRider(this, 0.8f, -0.1f, 0f);
     }
 
     public float getOptimalDistance(EntityMinecart cart) {
-        return 0.95F;
+        return 6.5F;
     }
 
     @Override
     public String transportCountry() {
-        return Transport.BR103().country;
+        return Transport.EurofimaOpen1().country;
     }
 
     @Override
     public String transportYear() {
-        return Transport.BR103().year;
+        return Transport.EurofimaOpen1().year;
     }
 
     public String getInventoryName() {
-        return Transport.BR103().name;
+        return Transport.EurofimaOpen1().name;
     }
 
     @Override
     public boolean isFictional() {
-        return Transport.BR103().fictional;
+        return Transport.EurofimaOpen1().fictional;
     }
 
     @Override
     public void onRenderInsertRecord() {
         Traincraft.traincraftRegistry.RegisterRollingStockModel(
                 new TrainRenderRecord(wwcp.common.library.Info.modID,
-                        EntityBR103.class, new BR103(),
-                        "BR103",
-                        new float[]{-4f, 0.15F, 0.0F},
+                        EntityEurofima2ndClassCompartment.class, new EurofimaOpen1(),
+                        "Eurofima1stClass",
+                        new float[]{0f, 0.15F, 0.0F},
                         new float[]{0F, 180F, 180F},
                         null) {
                     @Override
@@ -60,16 +58,10 @@ public class EntityBR103 extends ElectricTrain {
                         String texturePath = "";
                         switch (colorAsString.toLowerCase()) {
                             case "yellow":
-                                texturePath = "textures/locomotive/Electric/BR103/BR103Lufthansa";
+                                texturePath = "textures/passengerstock/Eurofima/EurofimaOpen/Class1/O1Base";
                                 break;
                             case "orange":
-                                texturePath = "textures/locomotive/Electric/BR103/BR103Base";
-                                break;
-                            case "blue":
-                                texturePath = "textures/locomotive/Electric/BR103/FullRed";
-                                break;
-                            case "red":
-                                texturePath = "textures/locomotive/Electric/BR103/FullRed1";
+                                texturePath = "textures/passengerstock/Eurofima/EurofimaOpen/Class1/O1SBB";
                                 break;
                         }
                         texturePath += ".png";
@@ -77,10 +69,5 @@ public class EntityBR103 extends ElectricTrain {
                         return new ResourceLocation(wwcp.common.library.Info.modID, texturePath);
                     }
                 });
-    }
-
-    @Override
-    public SoundRecord getSoundRecord() {
-        return EnumSounds.locoElectricBR185;
     }
 }

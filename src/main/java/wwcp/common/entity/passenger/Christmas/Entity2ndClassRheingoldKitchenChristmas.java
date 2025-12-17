@@ -1,25 +1,24 @@
-package wwcp.common.entity.passenger;
+package wwcp.common.entity.passenger.Christmas;
 
 import net.minecraft.entity.item.EntityMinecart;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import train.client.render.register.TrainRenderRecord;
 import train.common.Traincraft;
-import train.common.api.AbstractPassengerCar;
+import train.common.api.AbstractWorkCart;
 import train.common.core.util.TraincraftUtil;
-import wwcp.client.render.rollingstock.passengerStock.Christmas.ChristmasSalon1;
-import wwcp.client.render.rollingstock.passengerStock.Christmas.ChristmasSalon2;
+import wwcp.client.render.rollingstock.passengerStock.Christmas.ChristmasSpeise2;
 import wwcp.common.core.handler.Transport;
 
-public class Entity2ndClassRheingoldChristmas extends AbstractPassengerCar {
+public class Entity2ndClassRheingoldKitchenChristmas extends AbstractWorkCart {
 
-    public Entity2ndClassRheingoldChristmas(World world) {
+    public Entity2ndClassRheingoldKitchenChristmas(World world) {
         super(world);
         InsertTexture(0, "Christmas 1st class carriage");
     }
 
     public void updateRiderPosition() {
-        TraincraftUtil.updateRider(this, 0.2f, 0f, -0.25f);
+        TraincraftUtil.updateRider(this, 0.2f, 0f, -0.5f);
     }
 
     public float getOptimalDistance(EntityMinecart cart) {
@@ -28,28 +27,28 @@ public class Entity2ndClassRheingoldChristmas extends AbstractPassengerCar {
 
     @Override
     public String transportCountry() {
-        return Transport.RheingoldSalon2Christmas().country;
+        return Transport.RheingoldKitchen2Christmas().country;
     }
 
     @Override
     public String transportYear() {
-        return Transport.RheingoldSalon2Christmas().year;
+        return Transport.RheingoldKitchen2Christmas().year;
     }
 
     public String getInventoryName() {
-        return Transport.RheingoldSalon2Christmas().name;
+        return Transport.RheingoldKitchen2Christmas().name;
     }
 
     @Override
     public boolean isFictional() {
-        return Transport.RheingoldSalon2Christmas().fictional;
+        return Transport.RheingoldKitchen2Christmas().fictional;
     }
 
     @Override
     public void onRenderInsertRecord() {
         Traincraft.traincraftRegistry.RegisterRollingStockModel(
                 new TrainRenderRecord(wwcp.common.library.Info.modID,
-                        Entity2ndClassRheingoldChristmas.class, new ChristmasSalon2(),
+                        Entity2ndClassRheingoldKitchenChristmas.class, new ChristmasSpeise2(),
                         "ChristmasSalon",
                         new float[]{-0.1f, 0.15F, 0.0F},
                         new float[]{0F, 180F, 180F},
@@ -59,7 +58,7 @@ public class Entity2ndClassRheingoldChristmas extends AbstractPassengerCar {
                         String texturePath = "";
                         switch (colorAsString.toLowerCase()) {
                             case "yellow":
-                                texturePath = "textures/passengerstock/ChristmasStock/ChristmasSalon2";
+                                texturePath = "textures/passengerstock/ChristmasStock/ChristmasSpeise2";
                                 break;
                         }
                         texturePath += ".png";

@@ -1,5 +1,8 @@
 package wwcp.common.core.handler;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+
 public class Transport {
 
     public static String era = "wwcp.era";
@@ -39,7 +42,10 @@ public class Transport {
             additionalTextTitle2 = AditionalText2Title;
             additionalText2 = AditionalText2;
             tractive_effort = TractiveEffort;
-            weightinKGs = (double)(WeightinTons)/10;
+            double weight = WeightinTons/10;
+            BigDecimal bd = new BigDecimal(Double.toString(weight));
+            bd = bd.setScale(1, RoundingMode.HALF_UP);
+            weightinKGs = bd.doubleValue();
             topSpeed = TopSpeed;
             metric_horsepower = MetricHorsepower;
             backTopSpeed = BackTopSpeed;
@@ -83,7 +89,10 @@ public class Transport {
             additionalTextTitle2 = AditionalText2Title;
             additionalText2 = AditionalText2;
             tractive_effort = TractiveEffort;
-            weightinKGs = (double)(WeightinTons)/10;
+            double weight = WeightinTons/10;
+            BigDecimal bd = new BigDecimal(Double.toString(weight));
+            bd = bd.setScale(1, RoundingMode.HALF_UP);
+            weightinKGs = bd.doubleValue();
             topSpeed = TopSpeed;
             metric_horsepower = MetricHorsepower;
             backTopSpeed = TopSpeed;
@@ -122,7 +131,10 @@ public class Transport {
             additionalText = AditionalText;
             additionalTextTitle2 = AditionalText2Title;
             additionalText2 = AditionalText2;
-            weightinKGs = (double)(WeightinTons)/10;
+            double weight = WeightinTons/10;
+            BigDecimal bd = new BigDecimal(Double.toString(weight));
+            bd = bd.setScale(1, RoundingMode.HALF_UP);
+            weightinKGs = bd.doubleValue();
             topSpeed = TopSpeed;
             fictional = Fictional;
             backTopSpeed = TopSpeed;
@@ -159,7 +171,10 @@ public class Transport {
             additionalText = AditionalText;
             additionalTextTitle2 = AditionalText2Title;
             additionalText2 = AditionalText2;
-            weightinKGs = (double)(WeightinTons)/10;
+            double weight = WeightinTons/10;
+            BigDecimal bd = new BigDecimal(Double.toString(weight));
+            bd = bd.setScale(1, RoundingMode.HALF_UP);
+            weightinKGs = bd.doubleValue();
             topSpeed = TopSpeed;
             fictional = Fictional;
             backTopSpeed = TopSpeed;

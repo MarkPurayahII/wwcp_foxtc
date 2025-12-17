@@ -1,4 +1,4 @@
-package wwcp.common.entity.passenger;
+package wwcp.common.entity.passenger.Eurofima;
 
 import net.minecraft.entity.item.EntityMinecart;
 import net.minecraft.util.ResourceLocation;
@@ -6,12 +6,9 @@ import net.minecraft.world.World;
 import train.client.render.register.TrainRenderRecord;
 import train.common.Traincraft;
 import train.common.api.AbstractPassengerCar;
-import train.common.api.EntityRollingStock;
 import train.common.core.util.TraincraftUtil;
-import wwcp.client.render.rollingstock.locomotives.diesels.SD90MACH;
 import wwcp.client.render.rollingstock.passengerStock.Eurofima.EurofimaOpen1;
 import wwcp.common.core.handler.Transport;
-import wwcp.common.entity.locomotives.diesels.EntitySD90MACH;
 
 public class EntityEurofima1stClass extends AbstractPassengerCar {
 
@@ -21,7 +18,7 @@ public class EntityEurofima1stClass extends AbstractPassengerCar {
     }
 
     public void updateRiderPosition() {
-        TraincraftUtil.updateRider(this, 5f, 0f, 0f);
+        TraincraftUtil.updateRider(this, 0.8f, -0.1f, 0f);
     }
 
     public float getOptimalDistance(EntityMinecart cart) {

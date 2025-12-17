@@ -18,7 +18,7 @@ import java.util.ArrayList;
 public class EntityChristmasBR01 extends SteamTrain {
 
     public EntityChristmasBR01(World world) {
-        super(world,100000, LiquidManager.WATER_FILTER);
+        super(world, LiquidManager.WATER_FILTER);
         InsertTexture(0, "ChristmasBR01");
 
     }

@@ -1,4 +1,4 @@
-package wwcp.common.entity.passenger;
+package wwcp.common.entity.passenger.Christmas;
 
 import net.minecraft.entity.item.EntityMinecart;
 import net.minecraft.util.ResourceLocation;
@@ -7,12 +7,12 @@ import train.client.render.register.TrainRenderRecord;
 import train.common.Traincraft;
 import train.common.api.AbstractPassengerCar;
 import train.common.core.util.TraincraftUtil;
-import wwcp.client.render.rollingstock.passengerStock.Christmas.ChristmasSalon1;
+import wwcp.client.render.rollingstock.passengerStock.Christmas.ChristmasSalon2;
 import wwcp.common.core.handler.Transport;
 
-public class Entity1stClassRheingoldChristmas extends AbstractPassengerCar {
+public class Entity2ndClassRheingoldChristmas extends AbstractPassengerCar {
 
-    public Entity1stClassRheingoldChristmas(World world) {
+    public Entity2ndClassRheingoldChristmas(World world) {
         super(world);
         InsertTexture(0, "Christmas 1st class carriage");
     }
@@ -27,28 +27,28 @@ public class Entity1stClassRheingoldChristmas extends AbstractPassengerCar {
 
     @Override
     public String transportCountry() {
-        return Transport.RheingoldSalon1Christmas().country;
+        return Transport.RheingoldSalon2Christmas().country;
     }
 
     @Override
     public String transportYear() {
-        return Transport.RheingoldSalon1Christmas().year;
+        return Transport.RheingoldSalon2Christmas().year;
     }
 
     public String getInventoryName() {
-        return Transport.RheingoldSalon1Christmas().name;
+        return Transport.RheingoldSalon2Christmas().name;
     }
 
     @Override
     public boolean isFictional() {
-        return Transport.RheingoldSalon1Christmas().fictional;
+        return Transport.RheingoldSalon2Christmas().fictional;
     }
 
     @Override
     public void onRenderInsertRecord() {
         Traincraft.traincraftRegistry.RegisterRollingStockModel(
                 new TrainRenderRecord(wwcp.common.library.Info.modID,
-                        Entity1stClassRheingoldChristmas.class, new ChristmasSalon1(),
+                        Entity2ndClassRheingoldChristmas.class, new ChristmasSalon2(),
                         "ChristmasSalon",
                         new float[]{-0.1f, 0.15F, 0.0F},
                         new float[]{0F, 180F, 180F},
@@ -58,7 +58,7 @@ public class Entity1stClassRheingoldChristmas extends AbstractPassengerCar {
                         String texturePath = "";
                         switch (colorAsString.toLowerCase()) {
                             case "yellow":
-                                texturePath = "textures/passengerstock/ChristmasStock/ChristmasSalon1";
+                                texturePath = "textures/passengerstock/ChristmasStock/ChristmasSalon2";
                                 break;
                         }
                         texturePath += ".png";

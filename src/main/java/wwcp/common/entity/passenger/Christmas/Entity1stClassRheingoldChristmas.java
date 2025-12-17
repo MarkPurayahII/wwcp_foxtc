@@ -1,4 +1,4 @@
-package wwcp.common.entity.passenger;
+package wwcp.common.entity.passenger.Christmas;
 
 import net.minecraft.entity.item.EntityMinecart;
 import net.minecraft.util.ResourceLocation;
@@ -6,15 +6,13 @@ import net.minecraft.world.World;
 import train.client.render.register.TrainRenderRecord;
 import train.common.Traincraft;
 import train.common.api.AbstractPassengerCar;
-import train.common.api.AbstractWorkCart;
 import train.common.core.util.TraincraftUtil;
 import wwcp.client.render.rollingstock.passengerStock.Christmas.ChristmasSalon1;
-import wwcp.client.render.rollingstock.passengerStock.Christmas.ChristmasSpeise2;
 import wwcp.common.core.handler.Transport;
 
-public class Entity2ndClassRheingoldKitchenChristmas extends AbstractWorkCart {
+public class Entity1stClassRheingoldChristmas extends AbstractPassengerCar {
 
-    public Entity2ndClassRheingoldKitchenChristmas(World world) {
+    public Entity1stClassRheingoldChristmas(World world) {
         super(world);
         InsertTexture(0, "Christmas 1st class carriage");
     }
@@ -29,28 +27,28 @@ public class Entity2ndClassRheingoldKitchenChristmas extends AbstractWorkCart {
 
     @Override
     public String transportCountry() {
-        return Transport.RheingoldKitchen2Christmas().country;
+        return Transport.RheingoldSalon1Christmas().country;
     }
 
     @Override
     public String transportYear() {
-        return Transport.RheingoldKitchen2Christmas().year;
+        return Transport.RheingoldSalon1Christmas().year;
     }
 
     public String getInventoryName() {
-        return Transport.RheingoldKitchen2Christmas().name;
+        return Transport.RheingoldSalon1Christmas().name;
     }
 
     @Override
     public boolean isFictional() {
-        return Transport.RheingoldKitchen2Christmas().fictional;
+        return Transport.RheingoldSalon1Christmas().fictional;
     }
 
     @Override
     public void onRenderInsertRecord() {
         Traincraft.traincraftRegistry.RegisterRollingStockModel(
                 new TrainRenderRecord(wwcp.common.library.Info.modID,
-                        Entity2ndClassRheingoldKitchenChristmas.class, new ChristmasSpeise2(),
+                        Entity1stClassRheingoldChristmas.class, new ChristmasSalon1(),
                         "ChristmasSalon",
                         new float[]{-0.1f, 0.15F, 0.0F},
                         new float[]{0F, 180F, 180F},
@@ -60,7 +58,7 @@ public class Entity2ndClassRheingoldKitchenChristmas extends AbstractWorkCart {
                         String texturePath = "";
                         switch (colorAsString.toLowerCase()) {
                             case "yellow":
-                                texturePath = "textures/passengerstock/ChristmasStock/ChristmasSpeise2";
+                                texturePath = "textures/passengerstock/ChristmasStock/ChristmasSalon1";
                                 break;
                         }
                         texturePath += ".png";

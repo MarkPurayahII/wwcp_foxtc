@@ -7,7 +7,12 @@ import wwcp.common.entity.locomotives.diesels.EntityWWCPShopShunter;
 import wwcp.common.entity.locomotives.electrics.EntityBR103;
 import wwcp.common.entity.locomotives.steam.EntityChristmasBR01;
 import wwcp.common.entity.locomotives.tenders.EntityT32ChristmasTender;
-import wwcp.common.entity.passenger.*;
+import wwcp.common.entity.passenger.Christmas.Entity1stClassRheingoldChristmas;
+import wwcp.common.entity.passenger.Christmas.Entity1stClassRheingoldKitchenChristmas;
+import wwcp.common.entity.passenger.Christmas.Entity2ndClassRheingoldChristmas;
+import wwcp.common.entity.passenger.Christmas.Entity2ndClassRheingoldKitchenChristmas;
+import wwcp.common.entity.passenger.Eurofima.EntityEurofima1stClass;
+import wwcp.common.entity.passenger.Eurofima.EntityEurofima1stClassCompartment;
 import wwcp.common.library.WWCPItems;
 import wwcp.common.wwcp;
 
@@ -43,7 +48,7 @@ public class WWCPEntityHandler
                                 Transport.DRBR01WitteChristmas().additionalText2, Transport.DRBR01WitteChristmas().weightinKGs,
                                 new String[] {"Yellow"}, 5, 0, 1.1, (int)Transport.DRBR01WitteChristmas().topSpeed,
                                 (int)Transport.DRBR01WitteChristmas().metric_horsepower, 40, 200,
-                                1.1, 6.2, 100000),
+                                1.1, 6.2, 50000),
                         Instance()
                 );
         /**
@@ -102,13 +107,22 @@ public class WWCPEntityHandler
 
         Traincraft.traincraftRegistry
             .RegisterRollingStockEntity(WWCPItems.Eurofima1stClassOpen.item,
-                    new TrainRecord(WWCPItems.Eurofima1stClassOpen.name(), EntityEurofima1stClass.class, WWCPItems.Eurofima1stClassOpen.item,
+                    new TrainRecord(Transport.EurofimaOpen1().name, EntityEurofima1stClass.class, WWCPItems.Eurofima1stClassOpen.item,
                             Transport.EurofimaOpen1().additionalText2, Transport.EurofimaOpen1().weightinKGs,
                             new String[] {"Yellow", "Orange"}, 5, 0, 0, 0,
                             0, 0, 0,
                             0, 0, 0),
                     Instance()
             );
+        Traincraft.traincraftRegistry
+                .RegisterRollingStockEntity(WWCPItems.Eurofima1stClassCompartment.item,
+                        new TrainRecord(Transport.EurofimaCompartment1().name, EntityEurofima1stClassCompartment.class, WWCPItems.Eurofima1stClassOpen.item,
+                                Transport.EurofimaCompartment1().additionalText2, Transport.EurofimaCompartment1().weightinKGs,
+                                new String[] {"Yellow", "Orange", "Red", "Purple", "Magenta", "Black", "Grey", "LightGrey"}, 5, 0, 0, 0,
+                                0, 0, 0,
+                                0, 0, 0),
+                        Instance()
+                );
 
         Traincraft.traincraftRegistry
                 .RegisterRollingStockEntity(WWCPItems.RheingoldSalon1Christmas.item,

@@ -15,7 +15,7 @@ import wwcp.common.core.handler.WWCPEntityHandler;
 public class EntityT32ChristmasTender extends Tender {
 
     public EntityT32ChristmasTender(World world) {
-        super(world, FluidRegistry.WATER, 0, 10000, LiquidManager.WATER_FILTER);
+        super(world, FluidRegistry.WATER, 0, 100000, LiquidManager.WATER_FILTER);
         InsertTexture(0, "T32 Christmas Tender");
     }
 

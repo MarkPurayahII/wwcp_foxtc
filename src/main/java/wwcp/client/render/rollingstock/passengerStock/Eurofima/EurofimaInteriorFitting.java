@@ -9,8 +9,14 @@
 
 package wwcp.client.render.rollingstock.passengerStock.Eurofima; //Path where the model is located
 
+import net.minecraft.entity.Entity;
+import net.minecraft.util.ResourceLocation;
+import org.lwjgl.opengl.GL11;
 import tmt.ModelConverter;
 import tmt.ModelRendererTurbo;
+import tmt.Tessellator;
+import wwcp.client.render.rollingstock.bogies.EUBogies.EurofimaBogie;
+import wwcp.common.library.Info;
 
 public class EurofimaInteriorFitting extends ModelConverter //Same as Filename
 {
@@ -1487,5 +1493,21 @@ public class EurofimaInteriorFitting extends ModelConverter //Same as Filename
 
 		bodyModel[363].addShapeBox(0F, 0F, 0F, 161, 1, 7, 0F,0F, 0.25F, -4F, 0F, 0.25F, -4F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.75F, -4F, 0F, -0.75F, -4F, 0F, -0.25F, 0F, 0F, -0.25F, 0F); // Box 371
 		bodyModel[363].setRotationPoint(-80.5F, -14F, 3F);
+	}
+
+	EurofimaBogie bogie = new EurofimaBogie();
+
+	@Override
+	public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) {
+		super.render(entity, f, f1, f2, f3, f4, f5);
+		Tessellator.bindTexture(new ResourceLocation(Info.modID, "textures/bogies/Eurofimabogie.png"));
+		GL11.glPushMatrix();
+		GL11.glTranslatef(4.55f,0,0);
+		bogie.render(entity, f, f1, f2, f3, f4, f5);
+		GL11.glPopMatrix();
+		GL11.glPushMatrix();
+		GL11.glTranslatef(-4.62f,0,0);
+		bogie.render(entity, f, f1, f2, f3, f4, f5);
+		GL11.glPopMatrix();
 	}
 }

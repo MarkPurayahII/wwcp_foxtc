@@ -1,14 +1,12 @@
-package wwcp.common.entity.passenger;
+package wwcp.common.entity.passenger.Christmas;
 
 import net.minecraft.entity.item.EntityMinecart;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import train.client.render.register.TrainRenderRecord;
 import train.common.Traincraft;
-import train.common.api.AbstractPassengerCar;
 import train.common.api.AbstractWorkCart;
 import train.common.core.util.TraincraftUtil;
-import wwcp.client.render.rollingstock.passengerStock.Christmas.ChristmasSalon1;
 import wwcp.client.render.rollingstock.passengerStock.Christmas.ChristmasSpeise1;
 import wwcp.common.core.handler.Transport;
 
