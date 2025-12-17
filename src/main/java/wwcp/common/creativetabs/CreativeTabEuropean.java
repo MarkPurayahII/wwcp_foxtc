@@ -10,15 +10,14 @@ package wwcp.common.creativetabs;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import wwcp.common.library.WWCPItems;
 
 public final class CreativeTabEuropean extends CreativeTabs
 {
-	private final Item itemForIcon;
 
-	public CreativeTabEuropean(int tabID, String tabName, Item tabIcon) {
+	public CreativeTabEuropean(int tabID, String tabName) {
 		super(tabID, tabName);
 		setBackgroundImageName("item_search.png");
-		itemForIcon = tabIcon;
 	}
 
 	@Override
@@ -28,7 +27,7 @@ public final class CreativeTabEuropean extends CreativeTabs
 
 	@Override
 	public ItemStack getIconItemStack() {
-		return new ItemStack(itemForIcon);
+		return new ItemStack(WWCPItems.EurofimaOpen1.item);
 	}
 
 	@Override
@@ -37,5 +36,5 @@ public final class CreativeTabEuropean extends CreativeTabs
 	}
 
 	@Override
-	public Item getTabIconItem(){return itemForIcon;}
+	public Item getTabIconItem(){return WWCPItems.EurofimaOpen1.item;}
 }

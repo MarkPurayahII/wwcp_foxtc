@@ -2,17 +2,12 @@ package wwcp.common.core.handler;
 
 import train.common.Traincraft;
 import train.common.library.register.TrainRecord;
-import wwcp.common.entity.locomotives.diesels.EntitySD90MACH;
-import wwcp.common.entity.locomotives.diesels.EntityWWCPShopShunter;
-import wwcp.common.entity.locomotives.electrics.EntityBR103;
+import wwcp.common.entity.locomotives.diesels.*;
+import wwcp.common.entity.locomotives.electrics.*;
 import wwcp.common.entity.locomotives.steam.EntityChristmasBR01;
 import wwcp.common.entity.locomotives.tenders.EntityT32ChristmasTender;
-import wwcp.common.entity.passenger.Christmas.Entity1stClassRheingoldChristmas;
-import wwcp.common.entity.passenger.Christmas.Entity1stClassRheingoldKitchenChristmas;
-import wwcp.common.entity.passenger.Christmas.Entity2ndClassRheingoldChristmas;
-import wwcp.common.entity.passenger.Christmas.Entity2ndClassRheingoldKitchenChristmas;
-import wwcp.common.entity.passenger.Eurofima.EntityEurofima1stClass;
-import wwcp.common.entity.passenger.Eurofima.EntityEurofima1stClassCompartment;
+import wwcp.common.entity.passenger.Christmas.*;
+import wwcp.common.entity.passenger.Eurofima.*;
 import wwcp.common.library.WWCPItems;
 import wwcp.common.wwcp;
 
@@ -100,14 +95,32 @@ public class WWCPEntityHandler
                                 0.95, 8, 0),
                         Instance()
                 );
+        Traincraft.traincraftRegistry
+                .RegisterRollingStockEntity(WWCPItems.F140AC1.item,
+                        new TrainRecord(Transport.F140AC1().name, EntityTRAXXF140AC1.class, WWCPItems.F140AC1.item,
+                                Transport.F140AC1().additionalText2, Transport.F140AC1().weightinKGs,
+                                new String[] {"Yellow"}, 5, 0, 0.95, (int)Transport.F140AC1().topSpeed,
+                                (int)Transport.F140AC1().metric_horsepower, 40, 0,
+                                0.95, 8, 0),
+                        Instance()
+                );
+        Traincraft.traincraftRegistry
+                .RegisterRollingStockEntity(WWCPItems.BR145.item,
+                        new TrainRecord(Transport.BR145().name, EntityBR145.class, WWCPItems.BR145.item,
+                                Transport.BR145().additionalText2, Transport.BR145().weightinKGs,
+                                new String[] {"Yellow"}, 5, 0, 0.95, (int)Transport.BR145().topSpeed,
+                                (int)Transport.BR145().metric_horsepower, 40, 0,
+                                0.95, 8, 0),
+                        Instance()
+                );
 
         /**
          * Passenger Stock
          */
 
         Traincraft.traincraftRegistry
-            .RegisterRollingStockEntity(WWCPItems.Eurofima1stClassOpen.item,
-                    new TrainRecord(Transport.EurofimaOpen1().name, EntityEurofima1stClass.class, WWCPItems.Eurofima1stClassOpen.item,
+            .RegisterRollingStockEntity(WWCPItems.EurofimaOpen1.item,
+                    new TrainRecord(Transport.EurofimaOpen1().name, EntityEurofima1stClass.class, WWCPItems.EurofimaOpen1.item,
                             Transport.EurofimaOpen1().additionalText2, Transport.EurofimaOpen1().weightinKGs,
                             new String[] {"Yellow", "Orange"}, 5, 0, 0, 0,
                             0, 0, 0,
@@ -115,10 +128,29 @@ public class WWCPEntityHandler
                     Instance()
             );
         Traincraft.traincraftRegistry
-                .RegisterRollingStockEntity(WWCPItems.Eurofima1stClassCompartment.item,
-                        new TrainRecord(Transport.EurofimaCompartment1().name, EntityEurofima1stClassCompartment.class, WWCPItems.Eurofima1stClassOpen.item,
+                .RegisterRollingStockEntity(WWCPItems.EurofimaCompartment1.item,
+                        new TrainRecord(Transport.EurofimaCompartment1().name, EntityEurofima1stClassCompartment.class, WWCPItems.EurofimaCompartment1.item,
                                 Transport.EurofimaCompartment1().additionalText2, Transport.EurofimaCompartment1().weightinKGs,
-                                new String[] {"Yellow", "Orange", "Red", "Purple", "Magenta", "Black", "Grey", "LightGrey"}, 5, 0, 0, 0,
+                                new String[] {"Yellow", "Orange", "Red", "Purple", "Black", "Grey", "LightGrey"}, 5, 0, 0, 0,
+                                0, 0, 0,
+                                0, 0, 0),
+                        Instance()
+                );
+        Traincraft.traincraftRegistry
+                .RegisterRollingStockEntity(WWCPItems.EurofimaCompartment1_2.item,
+                        new TrainRecord(Transport.EurofimaCompartment1_2().name, EntityEurofima1st2ndClassCompartment.class, WWCPItems.EurofimaCompartment1_2.item,
+                                Transport.EurofimaCompartment1_2().additionalText2, Transport.EurofimaCompartment1_2().weightinKGs,
+                                new String[] {"Yellow"}, 5, 0, 0, 0,
+                                0, 0, 0,
+                                0, 0, 0),
+                        Instance()
+                );
+
+        Traincraft.traincraftRegistry
+                .RegisterRollingStockEntity(WWCPItems.EurofimaPanorama.item,
+                        new TrainRecord(Transport.EurofimaPanorama().name, EntityEurofimaPanorama.class, WWCPItems.EurofimaPanorama.item,
+                                Transport.EurofimaPanorama().additionalText2, Transport.EurofimaPanorama().weightinKGs,
+                                new String[] {"Yellow"}, 5, 0, 0, 0,
                                 0, 0, 0,
                                 0, 0, 0),
                         Instance()
@@ -126,7 +158,7 @@ public class WWCPEntityHandler
 
         Traincraft.traincraftRegistry
                 .RegisterRollingStockEntity(WWCPItems.RheingoldSalon1Christmas.item,
-                        new TrainRecord(WWCPItems.RheingoldSalon1Christmas.name(), Entity1stClassRheingoldChristmas.class, WWCPItems.RheingoldSalon1Christmas.item,
+                        new TrainRecord(Transport.RheingoldSalon1Christmas().name, Entity1stClassRheingoldChristmas.class, WWCPItems.RheingoldSalon1Christmas.item,
                                 Transport.RheingoldSalon1Christmas().additionalText2, Transport.RheingoldSalon1Christmas().weightinKGs,
                                 new String[] {"Yellow"}, 5, 0, 0, 0,
                                 0, 0, 0,
@@ -160,6 +192,7 @@ public class WWCPEntityHandler
                                 0, 0, 0),
                         Instance()
                 );
+
 
     }
 }

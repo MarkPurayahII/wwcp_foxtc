@@ -280,11 +280,12 @@ item.tc:minecartTwoBil	TwoBil	com.jcirmodelsquad.tcjcir.vehicles.locomotives.ele
 item.tc:minecartW_A11	SEC W-A11	com.jcirmodelsquad.tcjcir.vehicles.locomotives.eletric.ElectricW_A11	W_A11_
 item.tc:minecartW_A55	SEC W-A55	com.jcirmodelsquad.tcjcir.vehicles.locomotives.eletric.ElectricW_A55	W_A55_
 item.tc:minecartW_A55_Combine	SEC W-A55 Combine	com.jcirmodelsquad.tcjcir.vehicles.locomotives.eletric.ElectricW_A55_Combine	W_A55_Combine_
-item.wwcp:RheingoldSalon1Christmas	RheingoldSalon1Christmas	wwcp.common.entity.passenger.Christmas.Entity1stClassRheingoldChristmas	ChristmasSalon
+item.wwcp:RheingoldSalon1Christmas	SA4u28Christmas	wwcp.common.entity.passenger.Christmas.Entity1stClassRheingoldChristmas	ChristmasSalon
 item.wwcp:RheingoldSpeise1Christmas	RheingoldSpeise1Christmas	wwcp.common.entity.passenger.Christmas.Entity1stClassRheingoldKitchenChristmas	ChristmasSpeise1
 item.wwcp:RheingoldSalon2Christmas	RheingoldSalon2Christmas	wwcp.common.entity.passenger.Christmas.Entity2ndClassRheingoldChristmas	ChristmasSalon
 item.wwcp:RheingoldSpeise2Christmas	RheingoldSpeise2Christmas	wwcp.common.entity.passenger.Christmas.Entity2ndClassRheingoldKitchenChristmas	ChristmasSalon
 item.wwcp:BR103	BR103	wwcp.common.entity.locomotives.electrics.EntityBR103	BR103
+item.wwcp:BR145	BR145	wwcp.common.entity.locomotives.electrics.EntityBR145	BR145
 item.tc:minecartLocoDD35B	DD35 B Unit	train.common.entity.rollingStock.EntityBUnitDD35	dd35b_
 item.tc:minecartBoxCartPRR	Freight Box Cart PRR	train.common.entity.rollingStock.freight.EntityBoxCartPRR	PRR_X31a
 item.tc:minecartBoxCartUS	Freight Box Cart US	train.common.entity.rollingStock.freight.EntityBoxCartUS	boxCartUS_
@@ -295,8 +296,10 @@ item.tc:minecartCabooseLogging	Caboose Logging	train.common.entity.rollingStock.
 item.tc:minecartCabooseLoggingPRR	PRR Caboose Logging	train.common.entity.rollingStock.workcart.EntityCabooseLoggingPRR	PRRCaboose_
 item.tc:minecartCabooseWork	Work Caboose	train.common.entity.rollingStock.workcart.EntityCabooseWorkCart	workcaboose
 item.wwcp:ChristmasBR01	ChristmasBR01	wwcp.common.entity.locomotives.steam.EntityChristmasBR01	ChristmasBR01
-item.wwcp:Eurofima1stClassOpen	Eurofima Open 1	wwcp.common.entity.passenger.Eurofima.EntityEurofima1stClass	Eurofima1stClass
-item.wwcp:Eurofima1stClassCompartment	EurofimaCompartments1	wwcp.common.entity.passenger.Eurofima.EntityEurofima1stClassCompartment	Eurofima1stClass
+item.wwcp:EurofimaCompartment1_2	EurofimaCompartments1_2	wwcp.common.entity.passenger.Eurofima.EntityEurofima1st2ndClassCompartment	Eurofima1_2_Compartment
+item.wwcp:EurofimaOpen1	Eurofima Open 1	wwcp.common.entity.passenger.Eurofima.EntityEurofima1stClass	Eurofima1stClass
+item.wwcp:EurofimaCompartment1	EurofimaCompartments1	wwcp.common.entity.passenger.Eurofima.EntityEurofima1stClassCompartment	Eurofima1stClassCompartment
+item.wwcp:EurofimaPanorama	Eurofima Panorama	wwcp.common.entity.passenger.Eurofima.EntityEurofimaPanorama	Eurofima1_2_Compartment
 item.tc:minecartFlatCartLogs_DB	Freight Flat Cart Logs DB	train.common.entity.rollingStock.freight.EntityFlatCarLogs_DB	flatCarLogs_DB_
 item.tc:minecartFlatCartRail_DB	Freight Flat Cart Rails DB	train.common.entity.rollingStock.freight.EntityFlatCarRails_DB	flatCarRails_DB_
 item.tc:minecartFlatCart_DB	Flat Cart DB	train.common.entity.rollingStock.freight.EntityFlatCar_DB	flatCar_DB_
@@ -444,6 +447,7 @@ item.wwcp:SD90MACH	SD90MACH	wwcp.common.entity.locomotives.diesels.EntitySD90MAC
 item.tc:minecartStockCar	Stock Cart	train.common.entity.rollingStock.EntityStockCar	stockcar_
 item.tc:minecartDRWGStockCar	DRWG Stock Cart	train.common.entity.rollingStock.EntityStockCarDRWG	drwgstockcar
 item.wwcp:T32TenderChristmas	T32TenderChristmas	wwcp.common.entity.locomotives.tenders.EntityT32ChristmasTender	ChristmasTenderT32
+item.wwcp:F140AC1	F140AC1	wwcp.common.entity.locomotives.electrics.EntityTRAXXF140AC1	F140AC1
 item.tc:minecartWatertransp	Tank Lava	train.common.entity.rollingStock.tanker.EntityTankLava	lavacar_
 item.tc:minecartTankWagon	Tank Wagon Yellow	train.common.entity.rollingStock.tanker.EntityTankWagon	tankwagon
 item.tc:minecartTankWagon2	Tank Wagon Grey	train.common.entity.rollingStock.tanker.EntityTankWagon2	tankwagon2_

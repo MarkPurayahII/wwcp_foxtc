@@ -37,9 +37,9 @@ public class wwcp
     public void preInit(FMLPreInitializationEvent event)
     {
         addonLog.info("preInit Addon Pack -" + Info.modName);
-        European = new CreativeTabEuropean(CreativeTabs.getNextID(), "WWCP Europe", Items.blaze_powder);
-        America = new CreativeTabAmerican(CreativeTabs.getNextID(), "WWCP America", Items.diamond);
-        WWCP = new CreativeTabWWCP(CreativeTabs.getNextID(), "WWCP Special", Items.diamond_boots);
+        European = new CreativeTabEuropean(CreativeTabs.getNextID(), "WWCP Europe");
+        America = new CreativeTabAmerican(CreativeTabs.getNextID(), "WWCP America");
+        WWCP = new CreativeTabWWCP(CreativeTabs.getNextID(), "WWCP Special");
 
         AddonPackItems addonPackItems = new AddonPackItems();
         WWCPEntityHandler entityHandler = new WWCPEntityHandler();

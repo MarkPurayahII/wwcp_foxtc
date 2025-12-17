@@ -55,7 +55,7 @@ public class EntityEurofima1stClassCompartment extends AbstractPassengerCar {
         Traincraft.traincraftRegistry.RegisterRollingStockModel(
                 new TrainRenderRecord(wwcp.common.library.Info.modID,
                         EntityEurofima1stClassCompartment.class, new EurofimaCompartment1(),
-                        "Eurofima1stClass",
+                        "Eurofima1stClassCompartment",
                         new float[]{0f, 0.15F, 0.0F},
                         new float[]{0F, 180F, 180F},
                         null) {
@@ -74,9 +74,6 @@ public class EntityEurofima1stClassCompartment extends AbstractPassengerCar {
                                 break;
                             case "purple":
                                 texturePath = "textures/passengerstock/Eurofima/EurofimaCompartment/Class1/C1_IC";
-                                break;
-                            case "magenta":
-                                texturePath = "textures/passengerstock/Eurofima/EurofimaCompartment/Class1/2Years_WWCP";
                                 break;
                             case "black":
                                 texturePath = "textures/passengerstock/Eurofima/EurofimaCompartment/Class1/C1_RER";

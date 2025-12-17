@@ -14,12 +14,10 @@ import wwcp.common.library.WWCPItems;
 
 public final class CreativeTabAmerican extends CreativeTabs
 {
-	private final Item itemForIcon;
 
-	public CreativeTabAmerican(int tabID, String tabName, Item tabIcon) {
+	public CreativeTabAmerican(int tabID, String tabName) {
 		super(tabID, tabName);
 		setBackgroundImageName("item_search.png");
-		itemForIcon = tabIcon;
 	}
 
 	@Override
@@ -29,7 +27,7 @@ public final class CreativeTabAmerican extends CreativeTabs
 
 	@Override
 	public ItemStack getIconItemStack() {
-		return new ItemStack(WWCPItems.Eurofima1stClassOpen.item);
+		return new ItemStack(WWCPItems.EurofimaOpen1.item);
 	}
 
 	@Override
@@ -38,5 +36,5 @@ public final class CreativeTabAmerican extends CreativeTabs
 	}
 
 	@Override
-	public Item getTabIconItem(){return WWCPItems.Eurofima1stClassOpen.item;}
+	public Item getTabIconItem(){return WWCPItems.EurofimaOpen1.item;}
 }

@@ -1,7 +1,6 @@
 package wwcp.common.library;
 
 import net.minecraft.item.Item;
-import train.common.api.Tender;
 import train.common.library.TypeOfRollingStock;
 
 /**
@@ -12,10 +11,14 @@ public enum WWCPItems
 {
     WWCPShopShunter("DefaultNormal", train.common.library.TypeOfRollingStock.DIESEL, "WWCP"),
     SD90MACH("DefaultNormal", train.common.library.TypeOfRollingStock.DIESEL, "American"),
-    Eurofima1stClassOpen("item.compartmentEurofima", train.common.library.TypeOfRollingStock.PASSENGER,"European"),
-    Eurofima1stClassCompartment("item.compartmentEurofima", train.common.library.TypeOfRollingStock.PASSENGER,"European"),
+    EurofimaOpen1("item.compartmentEurofima", train.common.library.TypeOfRollingStock.PASSENGER,"European"),
+    EurofimaCompartment1("item.compartmentEurofima", train.common.library.TypeOfRollingStock.PASSENGER,"European"),
+    EurofimaCompartment1_2("item.compartmentEurofima", train.common.library.TypeOfRollingStock.PASSENGER,"European"),
+    EurofimaPanorama("item.compartmentEurofima", train.common.library.TypeOfRollingStock.PASSENGER,"European"),
     BR103("item.BR103", train.common.library.TypeOfRollingStock.ELECTRIC, "European"),
-    ChristmasBR01("item.ChristmasBR01", train.common.library.TypeOfRollingStock.STEAM, "WWCP"),
+    F140AC1("DefaultNormal", train.common.library.TypeOfRollingStock.ELECTRIC, "European"),
+    BR145("DefaultNormal", train.common.library.TypeOfRollingStock.ELECTRIC, "European"),
+    ChristmasBR01("DefaultChristmas", train.common.library.TypeOfRollingStock.STEAM, "WWCP"),
     T32TenderChristmas("DefaultChristmas",train.common.library.TypeOfRollingStock.FREIGHT, "WWCP"),
     RheingoldSalon1Christmas("DefaultChristmas", train.common.library.TypeOfRollingStock.PASSENGER, "WWCP"),
     RheingoldSalon2Christmas("DefaultChristmas", train.common.library.TypeOfRollingStock.PASSENGER, "WWCP"),
