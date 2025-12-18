@@ -8,9 +8,8 @@ import train.common.Traincraft;
 import train.common.api.DieselTrain;
 import train.common.api.LiquidManager;
 import train.common.core.util.TraincraftUtil;
-import train.common.library.EnumTrains;
 import train.common.library.sounds.SoundRecord;
-import wwcp.client.render.rollingstock.passenger.locomotives.diesels.SD90MACH;
+import wwcp.client.render.rollingstock.locomotives.diesels.SD90MACH;
 
 public class EntitySD90MACH extends DieselTrain
 {

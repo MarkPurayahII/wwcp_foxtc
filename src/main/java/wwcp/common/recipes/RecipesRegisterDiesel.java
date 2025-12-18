@@ -6,7 +6,7 @@ import train.common.api.crafting.ITierCraftingManager;
 import train.common.core.handlers.AbstractRecipeHandler;
 import train.common.core.managers.TierRecipeManager;
 import train.common.library.ItemIDs;
-import wwcp.common.library.AddonRollingStockItems;
+import wwcp.common.library.WWCPItems;
 
 import java.util.Iterator;
 
@@ -22,7 +22,7 @@ public class RecipesRegisterDiesel extends AbstractRecipeHandler
             Item itemSteel = k.getItem();
             int itemDamageSteel = k.getItemDamage();
 
-            cm.addRecipe(2, new ItemStack(ItemIDs.steelcab.item, 1), null, null, null, null,null, null,null,null,null, new ItemStack(AddonRollingStockItems.WWCPShopShunter.item, 1), 1);
+            cm.addRecipe(2, new ItemStack(ItemIDs.steelcab.item, 1), null, null, null, null,null, null,null,null,null, new ItemStack(WWCPItems.WWCPShopShunter.item, 1), 1);
 
         }
 

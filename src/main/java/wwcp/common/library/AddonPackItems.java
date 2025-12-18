@@ -1,7 +1,7 @@
 package wwcp.common.library;
 
 import cpw.mods.fml.common.registry.GameRegistry;
-import wwcp.common.items.ItemAddonPackRollingStock;
+import wwcp.common.items.ItemWWCPRollingStock;
 
 public class AddonPackItems
 {
@@ -16,14 +16,14 @@ public class AddonPackItems
 
     private void loadRollingStockItems()
     {
-        for (AddonRollingStockItems item : AddonRollingStockItems.values())
+        for (WWCPItems item : WWCPItems.values())
         {
-            item.item = new ItemAddonPackRollingStock(item.iconName, item.TypeOfRollingStock);
+            item.item = new ItemWWCPRollingStock(item.iconName, item.TypeOfRollingStock, item.tabName);
         }
     }
 
     private void registerItems() {
-        for (AddonRollingStockItems item : AddonRollingStockItems.values()) {
+        for (WWCPItems item : WWCPItems.values()) {
             if (item.item != null) {
                 item.item.setUnlocalizedName(Info.modID + ":" + item.ItemName);
                 GameRegistry.registerItem(item.item, item.ItemName);

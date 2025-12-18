@@ -14,6 +14,7 @@ item.tc:minecartACFGNRPO_30	AC&F GN RPO (30' mail)	com.jcirmodelsquad.tcjcir.veh
 item.tc:minecartACFRailbox	ACF Railbox	com.jcirmodelsquad.tcjcir.vehicles.rollingstock.freight.ACFRailbox	ACFRailbox_
 item.tc:minecartACFRailboxCushioned	ACF Railbox (Cushioned)	com.jcirmodelsquad.tcjcir.vehicles.rollingstock.freight.ACFRailboxCushioned	ACFRailboxCushioned_
 item.tc:minecartACFUPRPO60	AC&F UP RPO(60')	com.jcirmodelsquad.tcjcir.vehicles.rollingstock.passenger.rpo.ACFUPRPO60	AC&F_lightweight_UPRPO60_
+item.tc:minecartACF_LN_KCS60SeatDividedCoach	AC&F L&N and KCS 60 Seat Divided Coach	com.jcirmodelsquad.tcjcir.vehicles.rollingstock.passenger.ACF_LN_KCS60SeatDividedCoach	AC&F_LN_KCS60SeatDividedCoach_
 item.tc:minecartACF_SP_98seatcoach	AC&F SP 98 Seat Coach	com.jcirmodelsquad.tcjcir.vehicles.rollingstock.passenger.ACF_SP_98seatcoach	acf_sp_72_c_1_
 item.tc:minecartAipkitExplorer	Aipkit Explorer	com.jcirmodelsquad.tcjcir.vehicles.rollingstock.passenger.AipkitExplorer	aipkit_explorer
 item.tc:minecartAipkitExplorer2	Aipkit Explorer-II	com.jcirmodelsquad.tcjcir.vehicles.rollingstock.passenger.AipkitExplorer2	aipkit_explorerii_
@@ -279,6 +280,12 @@ item.tc:minecartTwoBil	TwoBil	com.jcirmodelsquad.tcjcir.vehicles.locomotives.ele
 item.tc:minecartW_A11	SEC W-A11	com.jcirmodelsquad.tcjcir.vehicles.locomotives.eletric.ElectricW_A11	W_A11_
 item.tc:minecartW_A55	SEC W-A55	com.jcirmodelsquad.tcjcir.vehicles.locomotives.eletric.ElectricW_A55	W_A55_
 item.tc:minecartW_A55_Combine	SEC W-A55 Combine	com.jcirmodelsquad.tcjcir.vehicles.locomotives.eletric.ElectricW_A55_Combine	W_A55_Combine_
+item.wwcp:RheingoldSalon1Christmas	SA4u28Christmas	wwcp.common.entity.passenger.Christmas.Entity1stClassRheingoldChristmas	ChristmasSalon
+item.wwcp:RheingoldSpeise1Christmas	RheingoldSpeise1Christmas	wwcp.common.entity.passenger.Christmas.Entity1stClassRheingoldKitchenChristmas	ChristmasSpeise1
+item.wwcp:RheingoldSalon2Christmas	RheingoldSalon2Christmas	wwcp.common.entity.passenger.Christmas.Entity2ndClassRheingoldChristmas	ChristmasSalon
+item.wwcp:RheingoldSpeise2Christmas	RheingoldSpeise2Christmas	wwcp.common.entity.passenger.Christmas.Entity2ndClassRheingoldKitchenChristmas	ChristmasSalon
+item.wwcp:BR103	BR103	wwcp.common.entity.locomotives.electrics.EntityBR103	BR103
+item.wwcp:BR145	BR145	wwcp.common.entity.locomotives.electrics.EntityBR145	BR145
 item.tc:minecartLocoDD35B	DD35 B Unit	train.common.entity.rollingStock.EntityBUnitDD35	dd35b_
 item.tc:minecartBoxCartPRR	Freight Box Cart PRR	train.common.entity.rollingStock.freight.EntityBoxCartPRR	PRR_X31a
 item.tc:minecartBoxCartUS	Freight Box Cart US	train.common.entity.rollingStock.freight.EntityBoxCartUS	boxCartUS_
@@ -288,6 +295,11 @@ item.tc:minecartCaboose3	Caboose Black	train.common.entity.rollingStock.workcart
 item.tc:minecartCabooseLogging	Caboose Logging	train.common.entity.rollingStock.workcart.EntityCabooseLogging	cabLogging_
 item.tc:minecartCabooseLoggingPRR	PRR Caboose Logging	train.common.entity.rollingStock.workcart.EntityCabooseLoggingPRR	PRRCaboose_
 item.tc:minecartCabooseWork	Work Caboose	train.common.entity.rollingStock.workcart.EntityCabooseWorkCart	workcaboose
+item.wwcp:ChristmasBR01	ChristmasBR01	wwcp.common.entity.locomotives.steam.EntityChristmasBR01	ChristmasBR01
+item.wwcp:EurofimaCompartment1_2	EurofimaCompartments1_2	wwcp.common.entity.passenger.Eurofima.EntityEurofima1st2ndClassCompartment	Eurofima1_2_Compartment
+item.wwcp:EurofimaOpen1	Eurofima Open 1	wwcp.common.entity.passenger.Eurofima.EntityEurofima1stClass	Eurofima1stClass
+item.wwcp:EurofimaCompartment1	EurofimaCompartments1	wwcp.common.entity.passenger.Eurofima.EntityEurofima1stClassCompartment	Eurofima1stClassCompartment
+item.wwcp:EurofimaPanorama	Eurofima Panorama	wwcp.common.entity.passenger.Eurofima.EntityEurofimaPanorama	Eurofima1_2_Compartment
 item.tc:minecartFlatCartLogs_DB	Freight Flat Cart Logs DB	train.common.entity.rollingStock.freight.EntityFlatCarLogs_DB	flatCarLogs_DB_
 item.tc:minecartFlatCartRail_DB	Freight Flat Cart Rails DB	train.common.entity.rollingStock.freight.EntityFlatCarRails_DB	flatCarRails_DB_
 item.tc:minecartFlatCart_DB	Flat Cart DB	train.common.entity.rollingStock.freight.EntityFlatCar_DB	flatCar_DB_
@@ -434,6 +446,8 @@ item.tc:minecartPropagandaUSSR	Propaganda USSR	train.common.entity.rollingStock.
 item.wwcp:SD90MACH	SD90MACH	wwcp.common.entity.locomotives.diesels.EntitySD90MACH	SD90MACH
 item.tc:minecartStockCar	Stock Cart	train.common.entity.rollingStock.EntityStockCar	stockcar_
 item.tc:minecartDRWGStockCar	DRWG Stock Cart	train.common.entity.rollingStock.EntityStockCarDRWG	drwgstockcar
+item.wwcp:T32TenderChristmas	T32TenderChristmas	wwcp.common.entity.locomotives.tenders.EntityT32ChristmasTender	ChristmasTenderT32
+item.wwcp:F140AC1	F140AC1	wwcp.common.entity.locomotives.electrics.EntityTRAXXF140AC1	F140AC1
 item.tc:minecartWatertransp	Tank Lava	train.common.entity.rollingStock.tanker.EntityTankLava	lavacar_
 item.tc:minecartTankWagon	Tank Wagon Yellow	train.common.entity.rollingStock.tanker.EntityTankWagon	tankwagon
 item.tc:minecartTankWagon2	Tank Wagon Grey	train.common.entity.rollingStock.tanker.EntityTankWagon2	tankwagon2_
@@ -493,6 +507,7 @@ item.tc:minecartHuskyStackWellcar	40ftHuskyStackWellcar	com.jcirmodelsquad.tcjci
 item.tc:minecartICCBaywindowWP	ICCBaywindowWP	com.jcirmodelsquad.tcjcir.vehicles.rollingstock.workcart.ICCBaywindowWP	iccbaywindow_
 item.tc:minecartICC_Bobber	ICC_Bobber	com.jcirmodelsquad.tcjcir.vehicles.rollingstock.workcart.ICC_Bobber	icc_bobber_
 item.tc:minecartIngotPig	IngotPig	com.jcirmodelsquad.tcjcir.vehicles.rollingstock.freight.IngotPig	MoltenIngotPig_
+item.tc:minecartLNCoach2551Series	L&N Coach 2551 Series	com.jcirmodelsquad.tcjcir.vehicles.rollingstock.passenger.LNCoach2551Series	LNCoach2551Series_
 item.tc:minecartMILW1935Baggage_Dinette	MILW 1935 Baggage-Dinette	com.jcirmodelsquad.tcjcir.vehicles.rollingstock.passenger.combinecar.MILW1935Baggage_Dinette	MILW1935Baggage_Dinette_
 item.tc:minecartMILW1935Dorm_56SeatCoach	MILW 1935 Dormitory-56 Seat Coach	com.jcirmodelsquad.tcjcir.vehicles.rollingstock.passenger.MILW1935Dorm_56SeatCoach	MILW1935Dorm_56SeatCoach_
 item.tc:minecartMILW1935Tap_Dinette	MILW 1935 Tap-Dinette	com.jcirmodelsquad.tcjcir.vehicles.rollingstock.passenger.MILW1935Tap_Dinette	MILW1935Tap_Dinette_

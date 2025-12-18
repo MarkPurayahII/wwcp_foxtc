@@ -12,9 +12,10 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import train.common.core.handlers.RecipeHandler;
 import train.common.core.managers.TierRecipeManager;
-import train.common.recipes.rollingstock.SteamRecipes;
-import wwcp.common.core.handler.AddonPackRollingStockEntityHandler;
-import wwcp.common.creativetabs.CreativeTabAddonPack;
+import wwcp.common.core.handler.WWCPEntityHandler;
+import wwcp.common.creativetabs.CreativeTabAmerican;
+import wwcp.common.creativetabs.CreativeTabEuropean;
+import wwcp.common.creativetabs.CreativeTabWWCP;
 import wwcp.common.library.AddonPackItems;
 import wwcp.common.library.Info;
 import wwcp.common.recipes.RecipesRegisterDiesel;
@@ -36,12 +37,12 @@ public class wwcp
     public void preInit(FMLPreInitializationEvent event)
     {
         addonLog.info("preInit Addon Pack -" + Info.modName);
-        European = new CreativeTabAddonPack(CreativeTabs.getNextID(), "WWCP Europe", Items.boat);
-        America = new CreativeTabAddonPack(CreativeTabs.getNextID(), "WWCP America", Items.diamond);
-        WWCP = new CreativeTabAddonPack(CreativeTabs.getNextID(), "WWCP Special", Items.diamond_boots);
+        European = new CreativeTabEuropean(CreativeTabs.getNextID(), "WWCP Europe");
+        America = new CreativeTabAmerican(CreativeTabs.getNextID(), "WWCP America");
+        WWCP = new CreativeTabWWCP(CreativeTabs.getNextID(), "WWCP Special");
 
         AddonPackItems addonPackItems = new AddonPackItems();
-        AddonPackRollingStockEntityHandler entityHandler = new AddonPackRollingStockEntityHandler();
+        WWCPEntityHandler entityHandler = new WWCPEntityHandler();
     }
 
     @EventHandler

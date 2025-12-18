@@ -10,8 +10,15 @@
 package wwcp.client.render.rollingstock.locomotives.electrics; //Path where the model is located
 
 
+import net.minecraft.entity.Entity;
+import net.minecraft.util.ResourceLocation;
+import org.lwjgl.opengl.GL11;
 import tmt.ModelConverter;
 import tmt.ModelRendererTurbo;
+import tmt.Tessellator;
+import wwcp.client.render.rollingstock.bogies.EUBogies.EurofimaBogie;
+import wwcp.client.render.rollingstock.bogies.GermanBRBogies.BR103Bogie;
+import wwcp.common.library.Info;
 
 public class BR103 extends ModelConverter //Same as Filename
 {
@@ -2385,5 +2392,21 @@ public class BR103 extends ModelConverter //Same as Filename
 
 		bodyModel[571].addShapeBox(-1F, 0F, 0F, 1, 1, 1, 0F,0F, 0F, -0.25F, 0F, -1F, -0.25F, 0F, -1F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F); // Box 571
 		bodyModel[571].setRotationPoint(76.25F, 2F, -0.5F);
+	}
+
+	BR103Bogie bogie = new BR103Bogie();
+
+	@Override
+	public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) {
+		super.render(entity, f, f1, f2, f3, f4, f5);
+		Tessellator.bindTexture(new ResourceLocation(Info.modID, "textures/locomotive/Electric/BR103/BR103Bogie.png"));
+		GL11.glPushMatrix();
+		GL11.glTranslatef(2.45f,0f,0);
+		bogie.render(entity, f, f1, f2, f3, f4, f5);
+		GL11.glPopMatrix();
+		GL11.glPushMatrix();
+		GL11.glTranslatef(-2.5f,0f,0);
+		bogie.render(entity, f, f1, f2, f3, f4, f5);
+		GL11.glPopMatrix();
 	}
 }
