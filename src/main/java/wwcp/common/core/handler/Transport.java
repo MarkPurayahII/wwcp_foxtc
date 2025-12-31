@@ -824,9 +824,9 @@ public class Transport {
 
     //SD45X
     public static LocomotiveNoBackspeed SD45X() {
-        return new LocomotiveNoBackspeed("SD45X", "America", "1971-1980", "Diesel",
+        return new LocomotiveNoBackspeed("SD45X", "US", "1971-1980", "Diesel",
                 nick, "", type, " Special Duty Locomotive",
-                82100f, 4200f, 184f, 112f, false, true, 0);
+                92000f, 4200f, 184f, 112f, false, true, 0);
     }
 
     //SD40-2 Snoot

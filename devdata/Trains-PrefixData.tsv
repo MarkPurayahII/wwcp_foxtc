@@ -293,6 +293,7 @@ item.tc:minecartBoxCartUS	Freight Box Cart US	train.common.entity.rollingStock.f
 item.tc:minecartBulkheadFlatCart	Freight Bulkhead Flat Cart	train.common.entity.rollingStock.freight.EntityBulkheadFlatCart	BulkheadFlat_
 item.wwcp:C424	C424	wwcp.common.entity.locomotives.diesels.EntityC424	C424
 item.wwcp:C425	C425	wwcp.common.entity.locomotives.diesels.EntityC425	C425
+item.wwcp:C430	C430	wwcp.common.entity.locomotives.diesels.EntityC430	C430
 item.wwcp:C630M	C630M	wwcp.common.entity.locomotives.diesels.EntityC630M	C630M
 item.tc:minecartCaboose	Caboose Red	train.common.entity.rollingStock.workcart.EntityCaboose	caboose
 item.tc:minecartCaboose3	Caboose Black	train.common.entity.rollingStock.workcart.EntityCaboose3	caboose3
@@ -460,6 +461,7 @@ item.tc:minecartPropagandaJapan	Propaganda Japan	train.common.entity.rollingStoc
 item.tc:minecartPropagandaUs	Propaganda USA	train.common.entity.rollingStock.EntityPropagandaUS	propaganda_new_
 item.tc:minecartPropagandaUSSR	Propaganda USSR	train.common.entity.rollingStock.EntityPropagandaUSSR	propaganda_USSR_
 item.wwcp:SD45	SD45	wwcp.common.entity.locomotives.diesels.EntitySD45	SD45
+item.wwcp:SD45X	SD45X	wwcp.common.entity.locomotives.diesels.EntitySD45X	SD45X
 item.wwcp:SLRV	SLRV	wwcp.common.entity.locomotives.electrics.EntitySLRV	SLRV
 item.tc:minecartStockCar	Stock Cart	train.common.entity.rollingStock.EntityStockCar	stockcar_
 item.tc:minecartDRWGStockCar	DRWG Stock Cart	train.common.entity.rollingStock.EntityStockCarDRWG	drwgstockcar

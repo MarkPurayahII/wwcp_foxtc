@@ -13,6 +13,8 @@ public enum WWCPItems
 //    SD90MACH("DefaultNormal", train.common.library.TypeOfRollingStock.DIESEL, "American"),
     M640("item.M640_Icon", train.common.library.TypeOfRollingStock.DIESEL, "American"),
     C630M("item.C630M_Icon", train.common.library.TypeOfRollingStock.DIESEL, "American"),
+    SD45X("item.SD45W_Icon", train.common.library.TypeOfRollingStock.DIESEL, "American"),
+    C430("item.C430_Icon", train.common.library.TypeOfRollingStock.DIESEL, "American"),
     C424("item.C424_Icon", train.common.library.TypeOfRollingStock.DIESEL, "American"),
     C425("item.C425_Icon", train.common.library.TypeOfRollingStock.DIESEL, "American"),
     GP30("item.GP30_Icon", train.common.library.TypeOfRollingStock.DIESEL, "American"),
