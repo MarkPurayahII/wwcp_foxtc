@@ -176,9 +176,9 @@ public class WWCPEntityHandler
                 .RegisterRollingStockEntity(WWCPItems.G322.item,
                         new TrainRecord(Transport.ClassMK().name, EntityG322.class, WWCPItems.G322.item,
                                 Transport.ClassMK().additionalText2, Transport.ClassMK().weightinKGs,
-                                new String[] {"Black","Red","Green","Brown","Blue","White","Lime","Magenta","LightGrey","Grey","Purple"}, 5, 2, 0.95, (int)Transport.ClassMK().topSpeed,
+                                new String[] {"Black","Red","Green","Brown","Blue","White","Lime","Magenta","LightGrey","Grey","Pink"}, 5, 2, 0.95, (int)Transport.ClassMK().topSpeed,
                                 (int)Transport.ClassMK().metric_horsepower, 40, 0,
-                                0.95, 4, 0),
+                                0.95, 4, 1000),
                         Instance()
                 );
 

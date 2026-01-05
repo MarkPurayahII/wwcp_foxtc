@@ -112,7 +112,7 @@ public class EntityG322 extends DieselTrain
                             case "grey":
                                 texturePath = "textures/locomotive/Diesel/G322-400B/VFSTG322.png";
                                 break;
-                            case "purple":
+                            case "pink":
                                 texturePath = "textures/locomotive/Diesel/G322-400B/VSFTG400B.png";
                                 break;
 
