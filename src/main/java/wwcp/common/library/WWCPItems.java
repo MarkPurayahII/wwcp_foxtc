@@ -48,7 +48,7 @@ public enum WWCPItems
     VertAPacAutorack("item.VertAPac_Icon",train.common.library.TypeOfRollingStock.FREIGHT, "American"),
     Hbbins("IconHbbins",train.common.library.TypeOfRollingStock.FREIGHT, "European"),
     Habbiins_17("IconHabbins",train.common.library.TypeOfRollingStock.FREIGHT, "European"),
-
+    G322("IconG322_400b",train.common.library.TypeOfRollingStock.FREIGHT, "European"),
     //minecraftTemplateUntradeable("template-icon", STEAM)
     ;
 
