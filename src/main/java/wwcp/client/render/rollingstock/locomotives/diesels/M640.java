@@ -29,7 +29,7 @@ public class M640 extends ModelConverter //Same as Filename
 
 	public M640() //Same as Filename
 	{
-		bodyModel = new ModelRendererTurbo[488];
+		bodyModel = new ModelRendererTurbo[489];
 
 		initbodyModel_1();
 
@@ -529,6 +529,7 @@ public class M640 extends ModelConverter //Same as Filename
 		bodyModel[485] = new ModelRendererTurbo(this, 156, 369, textureX, textureY); // Box 489
 		bodyModel[486] = new ModelRendererTurbo(this, 76, 123, textureX, textureY); // Box 186
 		bodyModel[487] = new ModelRendererTurbo(this, 161, 126, textureX, textureY); // Box 491
+		bodyModel[488] = new ModelRendererTurbo(this, 161, 126, textureX, textureY); // boxnew
 
 		bodyModel[0].addBox(0F, 0F, 0F, 126, 1, 22, 0F); // Box 1
 		bodyModel[0].setRotationPoint(-63F, -2F, -11F);
@@ -1893,10 +1894,10 @@ public class M640 extends ModelConverter //Same as Filename
 		bodyModel[443].addShapeBox(0F, 0F, 0F, 6, 2, 14, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F); // Box 475
 		bodyModel[443].setRotationPoint(-40F, -23F, -7F);
 
-		bodyModel[444].addShapeBox(0F, 0F, 0F, 23, 5, 2, 0F,0F, 0F, 0F, -9F, 0F, 0F, -9F, -0.5F, 1F, 0F, -0.5F, 1F, 0F, -0.5F, 0F, -9F, -0.5F, 0F, -9F, -0.5F, 0F, 0F, -0.5F, 0F); // Box 476
+		bodyModel[444].addShapeBox(0F, 0F, 0F, 23, 5, 2, 0F,0F, 0F, 0F, -9F, 0F, 0F, -9F, -0.5F, 1F, -1F, -0.5F, 1F, 0F, -0.5F, 0F, -9F, -0.5F, 0F, -9F, -0.5F, 0F, -1F, -0.5F, 0F); // Box 476
 		bodyModel[444].setRotationPoint(-40F, -23F, 7F);
 
-		bodyModel[445].addShapeBox(0F, 0F, 0F, 23, 5, 2, 0F,0F, -0.5F, 1F, -9F, -0.5F, 1F, -9F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, 0F, -9F, -0.5F, 0F, -9F, -0.5F, 0F, 0F, -0.5F, 0F); // Box 477
+		bodyModel[445].addShapeBox(0F, 0F, 0F, 23, 5, 2, 0F,-1F, -0.5F, 1F, -9F, -0.5F, 1F, -9F, 0F, 0F, 0F, 0F, 0F, -1F, -0.5F, 0F, -9F, -0.5F, 0F, -9F, -0.5F, 0F, 0F, -0.5F, 0F); // Box 477
 		bodyModel[445].setRotationPoint(-40F, -23F, -9F);
 
 		bodyModel[446].addShapeBox(0F, 0F, 0F, 3, 3, 2, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -2F, 0F, 0F, -2F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 473
@@ -2024,6 +2025,9 @@ public class M640 extends ModelConverter //Same as Filename
 
 		bodyModel[487].addShapeBox(0F, 0F, 0F, 1, 8, 1, 0F,-0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, -0.5F, 0F, -0.5F, -0.5F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, -0.5F, -0.5F, 0F, -0.5F); // Box 491
 		bodyModel[487].setRotationPoint(-36F, -9F, 11F);
+
+		bodyModel[488].addShapeBox(0F, 0F, 0F, 1, 8, 1, 0F,-0.5F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, -0.5F, 0F, 0F, -0.5F, 0F, 0F, 0F, -0.5F, 0F, 0F); // boxnew
+		bodyModel[488].setRotationPoint(-27F, -9F, -12F);
 	}
 
 	DofascoTruck bogieFront = new DofascoTruck();
