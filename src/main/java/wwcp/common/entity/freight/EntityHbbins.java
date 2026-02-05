@@ -19,8 +19,15 @@ public class EntityHbbins extends AbstractStandardFixedFreightCar {
     @Override
     public void setupTextureDescription()
     {
-        InsertTexture(0, "WP");
-        InsertTexture(1, "WP Feather");
+        InsertTexture(0, "ATA Citrus");
+        InsertTexture(1, "Brown Grey");
+        InsertTexture(2, "DSB");
+        InsertTexture(3, "Grey Red");
+        InsertTexture(4, "Persil");
+        InsertTexture(5, "Sea Rail");
+        InsertTexture(6, "SJ");
+        InsertTexture(7, "Transwagon Brown");
+        InsertTexture(8, "Transwagon Grey");
     }
 
     public float getOptimalDistance(EntityMinecart cart) {

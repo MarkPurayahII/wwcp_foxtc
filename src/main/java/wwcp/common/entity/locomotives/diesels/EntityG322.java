@@ -20,11 +20,17 @@ public class EntityG322 extends DieselTrain
 {
     public EntityG322(World world) {
         super(world, LiquidManager.dieselFilter());
-        InsertTexture(0, "SP&S Yellow");
-        InsertTexture(1, "Wabash");
-        InsertTexture(2,"CN Noodle");
-        InsertTexture(3,"CP Late");
-
+        InsertTexture(0, "DB RED");
+        InsertTexture(1, "DB Yellow");
+        InsertTexture(2,"DSB Yellow");
+        InsertTexture(3,"DSB 625");
+        InsertTexture(4,"Mittelweserbahn");
+        InsertTexture(5,"NRail G322");
+        InsertTexture(6,"NRail G400B");
+        InsertTexture(7,"NS G400B");
+        InsertTexture(8,"NT G400B");
+        InsertTexture(9,"VFST G322");
+        InsertTexture(10,"VFST G400B");
 
     }
 

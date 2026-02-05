@@ -55,6 +55,7 @@ menu.item.wwcp:tender=Tender
 menu.item.germany=Germany
 menu.item.europe=Europe
 menu.item.denmark=Denmark
+menu.item.america=America
 
 train.owner.name=You are not the owner!
 train.locked.name=Locked
@@ -383,8 +384,7 @@ item.wwcp:EurofimaGettingPaint.name=Eurofima undergoing painting
 item.wwcp:EurofimaInteriorFitting.name=Eurofima last construction stage
 item.wwcp:EurofimaAssemblingBase.name=Eurofima second construction stage
 item.wwcp:GS.name=GS Wagon
-item.wwcp:ItemDB.name=DB Component
-item.wwcp:ItemDBBogies.name=DB Electric Bogies
+
 entity.wwcp.Habbiins_17.name=Habiins 17
 item.wwcp:RheingoldSpeise1Christmas.name=Rheingold Speise 1st Class (Christmas)
 item.wwcp:RheingoldSpeise2Christmas.name=Rheingold Speise 2nd Class (Christmas)
@@ -430,5 +430,10 @@ tile.wwcp.blockPlatformSlabSlope.name=Platorm Slab Slope
 tile.wwcp.blockPlatformFullBlock.name=Platform Block
 
 <!-- ## Crafting Materials ## -->
-
+item.wwcp:EurofimaBogie.name=Eurofima Bogie
+item.wwcp:TRAXXComponent.name=TRAXX Component
+item.wwcp:LeatherSeats.name=Leather Seats
+item.wwcp:ClothSeats.name=Cloth Seats
+item.wwcp:ItemDB.name=DB Component
+item.wwcp:ItemDBBogies.name=DB Electric Bogies
 <!-- ## Extra types ## -->

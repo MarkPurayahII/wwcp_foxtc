@@ -3,12 +3,15 @@ package wwcp.common.recipes;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.oredict.OreDictionary;
 import train.common.api.crafting.ITierCraftingManager;
 import train.common.core.handlers.AbstractRecipeHandler;
 import train.common.core.managers.TierRecipeManager;
 import train.common.library.ItemIDs;
+import wwcp.common.library.WWCPCraftingItems;
 import wwcp.common.library.WWCPItems;
 
+import java.util.ArrayList;
 import java.util.Iterator;
 
 public class RecipesRegisterRollingStock extends AbstractRecipeHandler
@@ -17,7 +20,8 @@ public class RecipesRegisterRollingStock extends AbstractRecipeHandler
     public RecipesRegisterRollingStock(ITierCraftingManager cm)
     {
         Iterator var2 = this.ingotSteel.iterator();
-
+        ArrayList<ItemStack> planks = OreDictionary.getOres("plankWood");
+        ArrayList<ItemStack> gold = OreDictionary.getOres("ingotGold");
         while(var2.hasNext()) {
             ItemStack k = (ItemStack) var2.next();
             Item itemSteel = k.getItem();
@@ -33,12 +37,11 @@ public class RecipesRegisterRollingStock extends AbstractRecipeHandler
                 betterAddRecipe(2, null, null, null, dye,
                         null, new ItemStack(Blocks.chest, 1), null,
                         new ItemStack(ItemIDs.freightCarTruck.item, 2), new ItemStack(ItemIDs.steelframe.item, 2), new ItemStack(itemSteel, 6, itemDamageSteel), new ItemStack(WWCPItems.Paccar64Woodchip.item), 1);
-            }
 
-            for (ItemStack dye : dyeBrown) {//Gunderson596Woodchip
                 betterAddRecipe(2, new ItemStack(ItemIDs.freightCarRibbing.item, 4), null, null, dye,
                         null, new ItemStack(Blocks.chest, 1), null,
                         new ItemStack(ItemIDs.freightCarTruck.item, 2), new ItemStack(ItemIDs.steelframe.item, 2), new ItemStack(itemSteel, 4, itemDamageSteel), new ItemStack(WWCPItems.Gunderson596Woodchip.item), 1);
+
             }
 
             for (ItemStack dye : dyeBrown) {//OpenTriLevelAutorack
@@ -76,9 +79,107 @@ public class RecipesRegisterRollingStock extends AbstractRecipeHandler
                         null, new ItemStack(ItemIDs.transformer.item, 1), new ItemStack(ItemIDs.copperWireFine.item, 1),
                         new ItemStack(ItemIDs.ironBogie.item, 2), new ItemStack(ItemIDs.steelframe.item, 1), new ItemStack(itemSteel, 2, itemDamageSteel), new ItemStack(WWCPItems.SLRVC.item), 1);
             }
+            for (ItemStack plankItem : planks) {
+                betterAddRecipe(3, null, //Eurofima Compartment 1
+                        null,
+                        null,
+                        null,
+                        new ItemStack(WWCPCraftingItems.LeatherSeats.item, 1),
+                        new ItemStack(plankItem.getItem(), 2),
+                        null,
+                        new ItemStack(WWCPCraftingItems.EurofimaBogie.item, 2),
+                        new ItemStack(ItemIDs.steelframe.item, 1),
+                        null,
+                        new ItemStack(WWCPItems.EurofimaCompartment1.item), 1);
 
+                betterAddRecipe(3, null, //Eurofima Compartment 1-2
+                        null,
+                        null,
+                        null,
+                        new ItemStack(WWCPCraftingItems.LeatherSeats.item, 1),
+                        new ItemStack(plankItem.getItem(), 2),
+                        new ItemStack(WWCPCraftingItems.clothSeats.item,2),
+                        new ItemStack(WWCPCraftingItems.EurofimaBogie.item, 2),
+                        new ItemStack(ItemIDs.steelframe.item, 1),
+                        null,
+                        new ItemStack(WWCPItems.EurofimaCompartment1_2.item), 1);
+
+                betterAddRecipe(3, null, //Eurofima Open 1
+                        null,
+                        null,
+                        null,
+                        new ItemStack(WWCPCraftingItems.LeatherSeats.item, 1),
+                        null,
+                        null,
+                        new ItemStack(WWCPCraftingItems.EurofimaBogie.item, 2),
+                        new ItemStack(ItemIDs.steelframe.item, 1),
+                        null,
+                        new ItemStack(WWCPItems.EurofimaOpen1.item), 1);
+
+                betterAddRecipe(3, new ItemStack(Blocks.glass, 2), //Eurofima Panorama
+                        null,
+                        null,
+                        null,
+                        new ItemStack(WWCPCraftingItems.LeatherSeats.item, 1),
+                        null,
+                        null,
+                        new ItemStack(WWCPCraftingItems.EurofimaBogie.item, 2),
+                        new ItemStack(ItemIDs.steelframe.item, 1),
+                        null,
+                        new ItemStack(WWCPItems.EurofimaPanorama.item), 1);
+
+                for (ItemStack GoldItem : gold) {
+
+                betterAddRecipe(2, new ItemStack(Blocks.glass, 2), //Rheingold Christmas Salon 1
+                        null,
+                        new ItemStack(Blocks.glass, 2),
+                        new ItemStack(Blocks.redstone_lamp, 1),
+                        new ItemStack(WWCPCraftingItems.LeatherSeats.item, 1),
+                        new ItemStack(plankItem.getItem(),2),
+                        new ItemStack(GoldItem.getItem(), 1),
+                        new ItemStack(ItemIDs.bogie.item, 2),
+                        new ItemStack(ItemIDs.steelframe.item, 1),
+                        null,
+                        new ItemStack(WWCPItems.RheingoldSalon1Christmas.item), 1);
+
+                    betterAddRecipe(2, new ItemStack(Blocks.glass, 2), //Rheingold Christmas Kitchen 1
+                            null,
+                            new ItemStack(Blocks.glass, 2),
+                            new ItemStack(Blocks.redstone_lamp, 1),
+                            new ItemStack(WWCPCraftingItems.LeatherSeats.item, 1),
+                            new ItemStack(plankItem.getItem(),2),
+                            new ItemStack(Blocks.furnace, 1),
+                            new ItemStack(ItemIDs.bogie.item, 2),
+                            new ItemStack(ItemIDs.steelframe.item, 1),
+                            null,
+                            new ItemStack(WWCPItems.RheingoldSpeise1Christmas.item), 1);
+
+                    betterAddRecipe(2, new ItemStack(Blocks.glass, 2), //Rheingold Christmas Salon 1
+                            null,
+                            new ItemStack(Blocks.glass, 2),
+                            new ItemStack(Blocks.redstone_lamp, 1),
+                            new ItemStack(WWCPCraftingItems.clothSeats.item, 1),
+                            new ItemStack(plankItem.getItem(),2),
+                            null,
+                            new ItemStack(ItemIDs.bogie.item, 2),
+                            new ItemStack(ItemIDs.steelframe.item, 1),
+                            null,
+                            new ItemStack(WWCPItems.RheingoldSalon2Christmas.item), 1);
+
+                    betterAddRecipe(2, new ItemStack(Blocks.glass, 2), //Rheingold Christmas Kitchen 1
+                            null,
+                            new ItemStack(Blocks.glass, 2),
+                            new ItemStack(Blocks.redstone_lamp, 1),
+                            new ItemStack(WWCPCraftingItems.clothSeats.item, 1),
+                            new ItemStack(plankItem.getItem(),2),
+                            new ItemStack(Blocks.furnace, 1),
+                            new ItemStack(ItemIDs.bogie.item, 2),
+                            new ItemStack(ItemIDs.steelframe.item, 1),
+                            null,
+                            new ItemStack(WWCPItems.RheingoldSpeise2Christmas.item), 1);
+                }
+            }
         }
-
     }
 
     public static void betterAddRecipe(int tier, ItemStack top1, ItemStack top2,

@@ -8,18 +8,17 @@ import train.common.api.crafting.ITierCraftingManager;
 import train.common.core.handlers.AbstractRecipeHandler;
 import train.common.core.managers.TierRecipeManager;
 import train.common.library.ItemIDs;
+import wwcp.common.library.WWCPCraftingItems;
 import wwcp.common.library.WWCPItems;
 
 import java.util.Iterator;
 
-public class RecipesRegisterElectrics extends AbstractRecipeHandler
-{
+public class RecipesRegisterElectrics extends AbstractRecipeHandler {
 
-    public RecipesRegisterElectrics(ITierCraftingManager cm)
-    {
+    public RecipesRegisterElectrics(ITierCraftingManager cm) {
         Iterator var2 = this.ingotSteel.iterator();
 
-        while(var2.hasNext()) {
+        while (var2.hasNext()) {
             ItemStack k = (ItemStack) var2.next();
             Item itemSteel = k.getItem();
             int itemDamageSteel = k.getItemDamage();
@@ -49,6 +48,17 @@ public class RecipesRegisterElectrics extends AbstractRecipeHandler
                         new ItemStack(ItemIDs.controls.item, 1), new ItemStack(ItemIDs.transformer.item, 2), new ItemStack(ItemIDs.copperWireFine.item, 3),
                         new ItemStack(ItemIDs.ironBogie.item, 4), new ItemStack(ItemIDs.steelframe.item, 1), new ItemStack(itemSteel, 4, itemDamageSteel), new ItemStack(WWCPItems.SLRV.item), 1);
             }
+            betterAddRecipe(3, new ItemStack(ItemIDs.steelcab.item, 1), //BR145
+                    new ItemStack(ItemIDs.pantograph.item, 1),
+                    new ItemStack(WWCPCraftingItems.DBComponent.item, 1),
+                    null,
+                    new ItemStack(ItemIDs.controls.item, 1),
+                    new ItemStack(ItemIDs.transformer.item, 2),
+                    new ItemStack(ItemIDs.copperWireFine.item, 3),
+                    new ItemStack(WWCPCraftingItems.DBBogies.item, 2),
+                    new ItemStack(ItemIDs.steelframe.item, 1),
+                    new ItemStack(itemSteel, 4, itemDamageSteel),
+                    new ItemStack(WWCPItems.BR145.item), 1);
 
         }
 

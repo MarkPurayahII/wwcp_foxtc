@@ -9,7 +9,7 @@ import train.common.library.TypeOfRollingStock;
  */
 public enum WWCPItems
 {
-    WWCPShopShunter("DefaultNormal", train.common.library.TypeOfRollingStock.DIESEL, "WWCP"),
+    WWCPShopShunter("WWCPShopShunterIcon", train.common.library.TypeOfRollingStock.DIESEL, "WWCP"),
 //    SD90MACH("DefaultNormal", train.common.library.TypeOfRollingStock.DIESEL, "American"),
     M630("item.M630_Icon", train.common.library.TypeOfRollingStock.DIESEL, "American"),
     M640("item.M640_Icon", train.common.library.TypeOfRollingStock.DIESEL, "American"),
@@ -26,11 +26,11 @@ public enum WWCPItems
     SD45("item.SD45_Icon", train.common.library.TypeOfRollingStock.DIESEL, "American"),
     C408W("item.C408W_Icon", train.common.library.TypeOfRollingStock.DIESEL, "American"),
     SLRVC("SLRV_MID", train.common.library.TypeOfRollingStock.PASSENGER,"American"),
-    EurofimaOpen1("EurofimaNewIcon", train.common.library.TypeOfRollingStock.PASSENGER,"European"),
-    EurofimaCompartment1("item.CompartmentEurofima", train.common.library.TypeOfRollingStock.PASSENGER,"European"),
-    EurofimaCompartment1_2("item.CompartmentEurofima1_2", train.common.library.TypeOfRollingStock.PASSENGER,"European"),
+    EurofimaOpen1("Eurofima1stOpen", train.common.library.TypeOfRollingStock.PASSENGER,"European"),
+    EurofimaCompartment1("Eurofima1stCompartment", train.common.library.TypeOfRollingStock.PASSENGER,"European"),
+    EurofimaCompartment1_2("Eurofima1st2ndCompartment", train.common.library.TypeOfRollingStock.PASSENGER,"European"),
     EurofimaPanorama("EurofimaPanoramaItem", train.common.library.TypeOfRollingStock.PASSENGER,"European"),
-    BR103("item.BR103", train.common.library.TypeOfRollingStock.ELECTRIC, "European"),
+    BR103("BR103Item", train.common.library.TypeOfRollingStock.ELECTRIC, "European"),
     EP2("item.EP2_Cab", train.common.library.TypeOfRollingStock.ELECTRIC, "American"),
     EP2_Center("item.EP2_Center", train.common.library.TypeOfRollingStock.ELECTRIC, "American"),
     EP3("item.EP3", train.common.library.TypeOfRollingStock.ELECTRIC, "American"),
@@ -56,7 +56,7 @@ public enum WWCPItems
     Habbiins_17("IconHabbins",train.common.library.TypeOfRollingStock.FREIGHT, "European"),
     G322("IconG322_400b",train.common.library.TypeOfRollingStock.FREIGHT, "European"),
     TraxxF140MS2("TRAXXF140MS2",train.common.library.TypeOfRollingStock.FREIGHT, "European"),
-    ES64U2("TaurusIcon", train.common.library.TypeOfRollingStock.EMPTY,"European"),
+    ES64U2("TaurusES6U2", train.common.library.TypeOfRollingStock.EMPTY,"European"),
     //minecraftTemplateUntradeable("template-icon", STEAM)
     ;
 

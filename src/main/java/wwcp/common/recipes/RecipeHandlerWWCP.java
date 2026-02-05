@@ -11,9 +11,11 @@ import train.common.library.ItemIDs;
 import wwcp.common.library.WWCPCraftingItems;
 import wwcp.common.library.WWCPItems;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
+import static net.minecraft.init.Blocks.wool;
 import static net.minecraft.init.Items.leather;
 
 public class RecipeHandlerWWCP extends AbstractRecipeHandler {
@@ -84,12 +86,25 @@ public class RecipeHandlerWWCP extends AbstractRecipeHandler {
                             'C', cyanItem);
                 }
             }
+            for (ItemStack orangeItem : dyeOrange){
+                TrainCraftingManager.instance.addRecipe(new ItemStack(WWCPCraftingItems.EurofimaBogie.item, 2),
+                        " B ", "SSS", "A A",
+                        'A', new ItemStack(ItemIDs.bogie.item),
+                        'S', steelItem,
+                        'B', orangeItem);
+            }
+
         }
         for (ItemStack plankItem : planks){
             TrainCraftingManager.instance.addRecipe(new ItemStack(WWCPCraftingItems.LeatherSeats.item, 2),
-                    "  C", "CCC", "R R",
+                    "  C", " CC", " RR",
                     'R', plankItem,
                     'C', new ItemStack(leather));
+
+            TrainCraftingManager.instance.addRecipe(new ItemStack(WWCPCraftingItems.clothSeats.item, 2),
+                    "  C", " CC", " RR",
+                    'R', plankItem,
+                    'C', new ItemStack(wool));
         }
     }
 }
