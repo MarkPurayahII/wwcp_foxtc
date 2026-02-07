@@ -16,7 +16,10 @@ public class EntityBR103 extends ElectricTrain {
 
     public EntityBR103(World world) {
         super(world);    
-        InsertTexture(0, "BR103");
+        InsertTexture(0, "Lufthansa");
+        InsertTexture(0, "Rheingold");
+        InsertTexture(0, "IC Full red ");
+        InsertTexture(0, "Full red");
     }
     
     public void updateRiderPosition() {

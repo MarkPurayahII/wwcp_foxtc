@@ -75,7 +75,7 @@ public class EntityEF4 extends ElectricTrain {
                 });
     }
 
-    public final SoundRecord sound = new SoundRecord(this.getClass(), " ", 1.0F, "MILW_Notch8", 0.45F, 28, "MILW_Idle", 0.45F, 30, false, "alco_bronzebell_3", 18,
+    public final SoundRecord sound = new SoundRecord(this.getClass(), " ", 1.0F, "tc:MILW_Notch8", 0.45F, 28, "tc:MILW_Idle", 0.45F, 30, false, "tc:alco_bronzebell_3", 18,
             new String[]{"wabco_e2_1","wabco_e2_1"});
 
     public SoundRecord getSoundRecord() {

@@ -11,8 +11,12 @@ import train.common.library.ItemIDs;
 import wwcp.common.library.WWCPCraftingItems;
 import wwcp.common.library.WWCPItems;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
+
+import static net.minecraft.init.Blocks.wool;
+import static net.minecraft.init.Items.leather;
 
 public class RecipeHandlerWWCP extends AbstractRecipeHandler {
 
@@ -61,21 +65,46 @@ public class RecipeHandlerWWCP extends AbstractRecipeHandler {
         ArrayList<ItemStack> dyeCyan = OreDictionary.getOres("dyeCyan");
 
         for (ItemStack steelItem : steel) {
-            for (ItemStack dyeRedItem : dyeRed) {
-                TrainCraftingManager.instance.addRecipe(new ItemStack(WWCPCraftingItems.DBComponent.item, 1),
-                        "MCM", "SSS", "W W",
-                        'W', new ItemStack(ItemIDs.bogie.item),
-                        'S', steelItem,
-                        'M', new ItemStack(ItemIDs.electmotor.item),
-                        'C', dyeRedItem);
+            for (ItemStack redstoneItem : redstone) {
+                for (ItemStack dyeRedItem : dyeRed) {
+                    TrainCraftingManager.instance.addRecipe(new ItemStack(WWCPCraftingItems.DBComponent.item, 2),
+                            " C ", "CRC", " C ",
+                            'R', redstoneItem,
+                            'C', dyeRedItem);
 
-                TrainCraftingManager.instance.addRecipe(new ItemStack(WWCPCraftingItems.DBBogies.item, 1),
-                        "MC ", "SSS", "W W",
-                        'W', new ItemStack(ItemIDs.bogie.item),
-                        'S', steelItem,
-                        'M', new ItemStack(ItemIDs.electmotor.item),
-                        'C', dyeRedItem);
+                    TrainCraftingManager.instance.addRecipe(new ItemStack(WWCPCraftingItems.DBBogies.item, 2),
+                            "MCM", "S S", "W W",
+                            'W', new ItemStack(ItemIDs.bogie.item),
+                            'S', steelItem,
+                            'M', new ItemStack(ItemIDs.electmotor.item),
+                            'C', redstoneItem);
+                }
+                for (ItemStack cyanItem : dyeCyan){
+                    TrainCraftingManager.instance.addRecipe(new ItemStack(WWCPCraftingItems.TraxxComponent.item, 2),
+                            " C ", "CRC", " C ",
+                            'R', redstoneItem,
+                            'C', cyanItem);
+                }
             }
+            for (ItemStack orangeItem : dyeOrange){
+                TrainCraftingManager.instance.addRecipe(new ItemStack(WWCPCraftingItems.EurofimaBogie.item, 2),
+                        " B ", "SSS", "A A",
+                        'A', new ItemStack(ItemIDs.bogie.item),
+                        'S', steelItem,
+                        'B', orangeItem);
+            }
+
+        }
+        for (ItemStack plankItem : planks){
+            TrainCraftingManager.instance.addRecipe(new ItemStack(WWCPCraftingItems.LeatherSeats.item, 2),
+                    "  C", " CC", " RR",
+                    'R', plankItem,
+                    'C', new ItemStack(leather));
+
+            TrainCraftingManager.instance.addRecipe(new ItemStack(WWCPCraftingItems.clothSeats.item, 2),
+                    "  C", " CC", " RR",
+                    'R', plankItem,
+                    'C', new ItemStack(wool));
         }
     }
 }

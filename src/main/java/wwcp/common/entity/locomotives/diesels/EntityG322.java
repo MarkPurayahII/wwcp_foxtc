@@ -20,20 +20,26 @@ public class EntityG322 extends DieselTrain
 {
     public EntityG322(World world) {
         super(world, LiquidManager.dieselFilter());
-        InsertTexture(0, "SP&S Yellow");
-        InsertTexture(1, "Wabash");
-        InsertTexture(2,"CN Noodle");
-        InsertTexture(3,"CP Late");
-
+        InsertTexture(0, "DB RED");
+        InsertTexture(1, "DB Yellow");
+        InsertTexture(2,"DSB Yellow");
+        InsertTexture(3,"DSB 625");
+        InsertTexture(4,"Mittelweserbahn");
+        InsertTexture(5,"NRail G322");
+        InsertTexture(6,"NRail G400B");
+        InsertTexture(7,"NS G400B");
+        InsertTexture(8,"NT G400B");
+        InsertTexture(9,"VFST G322");
+        InsertTexture(10,"VFST G400B");
 
     }
 
     public void updateRiderPosition() {
-        TraincraftUtil.updateRider(this, 0F, 0.25f, -0.3f);
+        TraincraftUtil.updateRider(this, 0.4F, 0.3f, -0.3f);
     }
 
     public float getOptimalDistance(EntityMinecart cart) {
-        return 1.0F;
+        return 1.3F;
     }
 
     @Override
@@ -66,13 +72,13 @@ public class EntityG322 extends DieselTrain
                 new TrainRenderRecord(wwcp.common.library.Info.modID,
                         EntityG322.class, new G322(),
                         "G322",
-                        new float[] { -2.15f,0.15F,0.0F },
+                        new float[] { -1f,0.15F,0.0F },
                         new float[] { 0F, 180F, 180F },
                         null,
                         "smoke",
                         new ArrayList<double[]>() {
                             {
-                                add(new double[]{0.9D, 1.25D, 0.0D});
+                                add(new double[]{1D, 1.5D, -0.3D});
                             }},
                         "", null, 10, 2)
                 {

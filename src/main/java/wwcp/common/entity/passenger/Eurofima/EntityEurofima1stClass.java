@@ -14,7 +14,9 @@ public class EntityEurofima1stClass extends AbstractPassengerCar {
 
     public EntityEurofima1stClass(World world) {
         super(world);
-        InsertTexture(0, "Eurofima 1st Class");
+        InsertTexture(0, "Eurofima factory paint");
+        InsertTexture(0, "SSB");
+
     }
 
     public void updateRiderPosition() {

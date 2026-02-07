@@ -15,7 +15,7 @@ import wwcp.common.core.handler.WWCPEntityHandler;
 public class EntityT32ChristmasTender extends Tender {
 
     public EntityT32ChristmasTender(World world) {
-        super(world, FluidRegistry.WATER, 0, 100000, LiquidManager.WATER_FILTER);
+        super(world, LiquidManager.WATER_FILTER);
         InsertTexture(0, "T32 Christmas Tender");
     }
 
@@ -25,21 +25,21 @@ public class EntityT32ChristmasTender extends Tender {
 
     @Override
     public String transportCountry() {
-        return Transport.EurofimaOpen1().country;
+        return Transport.T32TenderChristmas().country;
     }
 
     @Override
     public String transportYear() {
-        return Transport.EurofimaOpen1().year;
+        return Transport.T32TenderChristmas().year;
     }
 
     public String getInventoryName() {
-        return Transport.EurofimaOpen1().name;
+        return Transport.T32TenderChristmas().name;
     }
 
     @Override
     public boolean isFictional() {
-        return Transport.EurofimaOpen1().fictional;
+        return Transport.T32TenderChristmas().fictional;
     }
 
     @Override
