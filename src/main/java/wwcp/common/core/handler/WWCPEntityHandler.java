@@ -320,7 +320,7 @@ public class WWCPEntityHandler
                 .RegisterRollingStockEntity(WWCPItems.EF4.item,
                         new TrainRecord(Transport.EF4().name, EntityEF4.class, WWCPItems.EF4.item,
                                 Transport.EF4().additionalText2, Transport.EF4().weightinKGs,
-                                new String[] {"Red","Orange"}, 5, 0, 0.95, (int)Transport.EF4().topSpeed,
+                                new String[] {"Red","Orange"}, 5, 0, 2.00, (int)Transport.EF4().topSpeed,
                                 (int)Transport.EF4().metric_horsepower, 40, 0,
                                 0.95, -8, 0),
                         Instance()
@@ -330,7 +330,7 @@ public class WWCPEntityHandler
                 .RegisterRollingStockEntity(WWCPItems.EP3.item,
                         new TrainRecord(Transport.EP3().name, EntityEP3.class, WWCPItems.EP3.item,
                                 Transport.EP3().additionalText2, Transport.EP3().weightinKGs,
-                                new String[] {"Red","Yellow","Orange"}, 5, 0, 0.95, (int)Transport.EP3().topSpeed,
+                                new String[] {"Red","Yellow","Orange"}, 5, 0, 2.00, (int)Transport.EP3().topSpeed,
                                 (int)Transport.EP3().metric_horsepower, 40, 0,
                                 0.95, -8, 0),
                         Instance()
@@ -350,7 +350,7 @@ public class WWCPEntityHandler
                 .RegisterRollingStockEntity(WWCPItems.EP2.item,
                         new TrainRecord(Transport.EP2().name, EntityEP2.class, WWCPItems.EP2.item,
                                 Transport.EP2().additionalText2, Transport.EP2().weightinKGs,
-                                new String[] {"Black","Red","Green","Brown","Blue","Purple","Cyan","LightGrey","Pink","Lime"}, 5, 0, 0.95, (int)Transport.EP2().topSpeed,
+                                new String[] {"Black","Red","Green","Brown","Blue","Purple","Cyan","LightGrey","Pink","Lime"}, 5, 0, 2.00, (int)Transport.EP2().topSpeed,
                                 (int)Transport.EP2().metric_horsepower, 40, 0,
                                 0.95, -3, 0),
                         Instance()
