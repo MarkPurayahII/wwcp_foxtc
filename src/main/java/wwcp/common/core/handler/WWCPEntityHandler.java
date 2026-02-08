@@ -211,10 +211,40 @@ public class WWCPEntityHandler
                 );
 
         Traincraft.traincraftRegistry
+                .RegisterRollingStockEntity(WWCPItems.SD70M.item,
+                        new TrainRecord(WWCPItems.SD70M.name(), EntitySD70M.class, WWCPItems.SD70M.item,
+                                "Freight Locomotive", 1,
+                                new String[] {"Skin16","Green","Skin17"}, 5, 0, .95, 164,
+                                4000, 60, 160,
+                                0.65, -5.9f, 10000),
+                        Instance()
+                );
+
+        Traincraft.traincraftRegistry
+                .RegisterRollingStockEntity(WWCPItems.SD75M.item,
+                        new TrainRecord(WWCPItems.SD75M.name(), EntitySD75M.class, WWCPItems.SD75M.item,
+                                "Freight Locomotive", 1,
+                                new String[] {"Black","Red","Green"}, 5, 0, .95, 164,
+                                4300, 60, 160,
+                                0.65, -5.9f, 10000),
+                        Instance()
+                );
+
+        Traincraft.traincraftRegistry
+                .RegisterRollingStockEntity(WWCPItems.SD75I.item,
+                        new TrainRecord(WWCPItems.SD75I.name(), EntitySD75I.class, WWCPItems.SD75I.item,
+                                "Freight Locomotive", 1,
+                                new String[] {"Black"}, 5, 0, .95, 164,
+                                4300, 60, 160,
+                                0.65, -5.9f, 10000),
+                        Instance()
+                );
+
+        Traincraft.traincraftRegistry
                 .RegisterRollingStockEntity(WWCPItems.C408W.item,
                         new TrainRecord(WWCPItems.C408W.name(), EntityC408W.class, WWCPItems.C408W.item,
                                 "Freight Locomotive", 1,
-                                new String[] {"Black","Red","Green","Brown","Blue","Purple","Cyan","LightGrey","Grey","Pink","Lime","Yellow","LightBlue"}, 5, 0, .95, 164,
+                                new String[] {"Black","Red","Green","Brown","Blue","Purple","Cyan","LightGrey","Grey","Pink","Lime","Yellow","LightBlue","Orange","White"}, 5, 0, .95, 164,
                                 4000, 60, 160,
                                 0.65, -5.5f, 10000),
                         Instance()
