@@ -80,8 +80,8 @@ public class RecipesRegisterRollingStock extends AbstractRecipeHandler {
             }
             for (ItemStack plankItem : planks) {
                 betterAddRecipe(3, null, //Hbbins
-                        null,
                         new ItemStack(ItemIDs.boxcarDoor.item,2),
+                        null,
                         null,
                         null,
                         new ItemStack(plankItem.getItem(),2),
@@ -92,8 +92,8 @@ public class RecipesRegisterRollingStock extends AbstractRecipeHandler {
                         new ItemStack(WWCPItems.Hbbins.item),1);
 
                 betterAddRecipe(3, null, //Hbbins
-                        null,
                         new ItemStack(ItemIDs.boxcarDoor.item,4),
+                        null,
                         null,
                         null,
                         new ItemStack(plankItem.getItem(),2),
