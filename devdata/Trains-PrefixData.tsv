@@ -435,6 +435,7 @@ item.tc:minecartLocoUSATCUS	Loco Steam USATCUS	train.common.entity.rollingStock.
 item.tc:minecartLocoSteamVBShay	Loco Steam VB Shay	train.common.entity.rollingStock.steam.EntityLocoSteamVBShay	vbshay
 item.wwcp:M630	M630	wwcp.common.entity.locomotives.diesels.EntityM630	M630
 item.wwcp:M640	M640	wwcp.common.entity.locomotives.diesels.EntityM640	M640
+item.wwcp:MZIII	MZIII	wwcp.common.entity.locomotives.diesels.EntityMZIII	DSB MZ III
 item.wwcp:MZIV	MZIV	wwcp.common.entity.locomotives.diesels.EntityMZIV	DSB MZ IV
 item.tc:minecartMailWagon_DB	Mail Wagon DB	train.common.entity.rollingStock.workcart.EntityMailWagen_DB	mailWagen_DB
 item.wwcp:OpenTriLevelAutorack	OpenTriLevelAutorack	wwcp.common.entity.freight.EntityOpenTriLevelAutorack	OpenTriLevelAutorack

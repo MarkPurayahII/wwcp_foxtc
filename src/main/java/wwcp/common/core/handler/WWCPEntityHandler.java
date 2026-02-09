@@ -240,6 +240,16 @@ public class WWCPEntityHandler
                                 0.65, -5.5, 10000),
                         Instance()
                 );
+        Traincraft.traincraftRegistry
+                .RegisterRollingStockEntity(WWCPItems.MZIII.item,
+                        new TrainRecord(Transport.MZIII().name, EntityMZIII.class, WWCPItems.MZIII.item,
+                                Transport.MZIII().additionalText2, Transport.MZIII().weightinKGs,
+                                new String[] {"Black","Red","Green"},
+                                5, 2, 1.25, (int)Transport.MZIII().topSpeed,
+                                (int)Transport.MZIII().metric_horsepower, 60, 0,
+                                0.65, -5.5, 10000),
+                        Instance()
+                );
 
         /**
          * ELECTRIC LOCOMOTIVES

@@ -58,6 +58,7 @@ public enum WWCPItems
     TraxxF140MS2("TRAXXF140MS2",train.common.library.TypeOfRollingStock.FREIGHT, "European"),
     ES64U2("TaurusES6U2", train.common.library.TypeOfRollingStock.EMPTY,"European"),
     MZIV("IconMzIV",train.common.library.TypeOfRollingStock.FREIGHT, "European"),
+    MZIII("IconMzI-III",train.common.library.TypeOfRollingStock.FREIGHT, "European"),
     //minecraftTemplateUntradeable("template-icon", STEAM)
     ;
 
