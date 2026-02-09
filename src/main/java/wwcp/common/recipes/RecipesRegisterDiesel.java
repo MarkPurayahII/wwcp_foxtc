@@ -11,14 +11,12 @@ import wwcp.common.library.WWCPItems;
 
 import java.util.Iterator;
 
-public class RecipesRegisterDiesel extends AbstractRecipeHandler
-{
+public class RecipesRegisterDiesel extends AbstractRecipeHandler {
 
-    public RecipesRegisterDiesel(ITierCraftingManager cm)
-    {
+    public RecipesRegisterDiesel(ITierCraftingManager cm) {
         Iterator var2 = this.ingotSteel.iterator();
 
-        while(var2.hasNext()) {
+        while (var2.hasNext()) {
             ItemStack k = (ItemStack) var2.next();
             Item itemSteel = k.getItem();
             int itemDamageSteel = k.getItemDamage();
@@ -110,7 +108,7 @@ public class RecipesRegisterDiesel extends AbstractRecipeHandler
                         new ItemStack(ItemIDs.generator.item, 4), new ItemStack(ItemIDs.electmotor.item, 6), new ItemStack(ItemIDs.dieselengine.item, 4),
                         new ItemStack(ItemIDs.bogie.item, 6), new ItemStack(ItemIDs.steelframe.item, 4), new ItemStack(itemSteel, 2, itemDamageSteel), new ItemStack(WWCPItems.SD75I.item), 1);
             }
-        }
+
 
             betterAddRecipe(3, new ItemStack(ItemIDs.controls.item, 1), //G322
                     null,
@@ -125,7 +123,7 @@ public class RecipesRegisterDiesel extends AbstractRecipeHandler
                     new ItemStack(WWCPItems.G322.item), 1);
 
             betterAddRecipe(3, new ItemStack(ItemIDs.controls.item, 1), //Shopshunter
-                    new ItemStack(ItemIDs.partTurboExhaust.item,1),
+                    new ItemStack(ItemIDs.partTurboExhaust.item, 1),
                     new ItemStack(ItemIDs.steelframe.item, 2),
                     null,
                     null,
@@ -137,6 +135,7 @@ public class RecipesRegisterDiesel extends AbstractRecipeHandler
                     new ItemStack(WWCPItems.WWCPShopShunter.item), 1);
         }
     }
+
 
     public static void betterAddRecipe(int tier, ItemStack top1, ItemStack top2,
                                        ItemStack top3, ItemStack top4, ItemStack mid1, ItemStack mid2, ItemStack mid3,

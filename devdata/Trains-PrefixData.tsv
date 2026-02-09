@@ -143,9 +143,7 @@ item.tc:minecart25Ton	GE 25-ton	com.jcirmodelsquad.tcjcir.vehicles.locomotives.d
 item.tc:minecart44Ton	GE 44-ton	com.jcirmodelsquad.tcjcir.vehicles.locomotives.diesel.DieselGE44Ton	44_ton_
 item.tc:minecartGP13	GP13	com.jcirmodelsquad.tcjcir.vehicles.locomotives.diesel.DieselGP13	gp13_
 item.tc:minecartGP15	GP15	com.jcirmodelsquad.tcjcir.vehicles.locomotives.diesel.DieselGP15	gp15_
-item.tc:minecartGP15T	GP15T	com.jcirmodelsquad.tcjcir.vehicles.locomotives.diesel.DieselGP15T	gp15t_
 item.tc:minecartGP18	GP18	com.jcirmodelsquad.tcjcir.vehicles.locomotives.diesel.DieselGP18	gp18_
-item.tc:minecartGP20	GP20	com.jcirmodelsquad.tcjcir.vehicles.locomotives.diesel.DieselGP20	gp20_
 item.tc:minecartGP30	GP30	com.jcirmodelsquad.tcjcir.vehicles.locomotives.diesel.DieselGP30	gp30_
 item.tc:minecartGP35	GP35	com.jcirmodelsquad.tcjcir.vehicles.locomotives.diesel.DieselGP35	gp35_
 item.tc:minecartGP38	GP38	com.jcirmodelsquad.tcjcir.vehicles.locomotives.diesel.DieselGP38	gp38_
@@ -555,6 +553,7 @@ item.tc:minecartMILW1935_44SeatCoach_Observation	MILW 1935 44 Seat Coach Observa
 item.tc:minecartMILW1935_48SeatCoach	MILW 1935 48 Seat Coach	com.jcirmodelsquad.tcjcir.vehicles.rollingstock.passenger.MILW1935_48SeatCoach	MILW1935_48SeatCoach_
 item.tc:minecartMILW40boxcar	MILW40boxcar	com.jcirmodelsquad.tcjcir.vehicles.rollingstock.freight.MILW40boxcar	milw40_
 item.tc:minecartMILWPrewarBaggage	MILW Prewar Baggage	com.jcirmodelsquad.tcjcir.vehicles.rollingstock.passenger.baggagecar.MILWPrewarBaggage	MILW_prewar_baggage_
+item.tc:minecartMON_lightweightCoach	Monon 21 Series Lightweight Coach	com.jcirmodelsquad.tcjcir.vehicles.rollingstock.passenger.MON_LightweightCoach	MON_LightweightCoach_
 item.tc:minecartMaPa35FootFlatcar	MaPa_35Flatcar	com.jcirmodelsquad.tcjcir.vehicles.rollingstock.freight.MaPa35FootFlat	MaPa_35flat_
 item.tc:minecartMaPa35FootGondola	MaPa_35Gondola	com.jcirmodelsquad.tcjcir.vehicles.rollingstock.freight.MaPa35FootGondola	MaPa_35gondola_
 item.tc:minecartMillGondola	52footMillGondola	com.jcirmodelsquad.tcjcir.vehicles.rollingstock.freight.MillGondola	MillGondola_
@@ -655,7 +654,6 @@ item.tc:minecartRoundHopper	Freight Round Covered Hopper	com.jcirmodelsquad.tcjc
 item.tc:minecartSBMS	SBMS	com.jcirmodelsquad.tcjcir.vehicles.locomotives.SBMS	SBMS_
 item.tc:minecartSMSC1	SMSC1	com.jcirmodelsquad.tcjcir.vehicles.locomotives.SMSC1	SMSC1_
 item.tc:minecartSP_B50	SP_B50	com.jcirmodelsquad.tcjcir.vehicles.rollingstock.freight.SP_B50	sp_b_50_
-item.tc:minecartSP_B50_AAR	SP_B50_AAR	com.jcirmodelsquad.tcjcir.vehicles.rollingstock.freight.SP_B50_AAR	sp_b_50_28_
 item.tc:minecartSkeletonLogCar	Skeleton	com.jcirmodelsquad.tcjcir.vehicles.rollingstock.freight.SkeletonLogCar	SkeletonLogCar_
 item.tc:minecartSlugMA	SlugMA	com.jcirmodelsquad.tcjcir.vehicles.locomotives.SlugMA	SMA_
 item.tc:minecartStampedeRack	StampedeRack	com.jcirmodelsquad.tcjcir.vehicles.rollingstock.misc.StampedeRack	cswr_stampederack_
