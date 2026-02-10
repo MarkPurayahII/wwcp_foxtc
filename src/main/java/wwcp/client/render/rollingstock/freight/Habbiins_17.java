@@ -1127,13 +1127,13 @@ public class Habbiins_17 extends ModelConverter //Same as Filename
 	public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) {
 		super.render(entity, f, f1, f2, f3, f4, f5);
 
-		Tessellator.bindTexture(new ResourceLocation(Info.modID, "textures/bogies/SGNSSBogie.png"));
+		Tessellator.bindTexture(new ResourceLocation(Info.modID, "textures/bogies/EUBogies/SGNSSBogie.png"));
 		GL11.glPushMatrix();
 		GL11.glTranslatef(4.55f,0f,0);
 		bogie.render(entity, f, f1, f2, f3, f4, f5);
 		GL11.glPopMatrix();
 
-		Tessellator.bindTexture(new ResourceLocation(Info.modID, "textures/bogies/SGNSSBogie.png"));
+		Tessellator.bindTexture(new ResourceLocation(Info.modID, "textures/bogies/EUBogies/SGNSSBogie.png"));
 		GL11.glPushMatrix();
 		GL11.glTranslatef(-4.55f,0f,0);
 		bogie.render(entity, f, f1, f2, f3, f4, f5);

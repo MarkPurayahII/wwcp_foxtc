@@ -16,8 +16,11 @@ public enum WWCPCraftingItems
     LeatherSeats("LeatherSeats","LeatherSeats",1),
     clothSeats("ClothSeats","ClothSeats",1),
     SGGNSBogie("SGGNSBogie","SGGNSBogie",1),
-    OBBComponent("OBBComponent","OBBComponent",1);
-
+    OBBComponent("OBBComponent","OBBComponent",1),
+    ContainerItem("ContainerItem","ContainerItem",1),
+    WWCPToken("WWCPToken","WWCPToken",1),
+    Fan("Fan","Fan",1),
+    PangeaToken("PangeaToken","PangeaToken",1)
     ;
 
     WWCPCraftingItems(String classMethodName, String iconName, int amountForEmerald) {

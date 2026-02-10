@@ -9,6 +9,7 @@ public enum TypeOfRollingStockWWCP {
     FREIGHT("FREIGHT"),
     BOOSE("BOOSE"),
     UNIVERSAL("UNIVERSAL"),
+    BAGGAGE("BAGGAGE"),
     EMPTY("");
 
     public final String EnumTypeOfRollingStockWWCP;

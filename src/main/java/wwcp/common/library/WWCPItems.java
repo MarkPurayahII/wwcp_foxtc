@@ -63,9 +63,15 @@ public enum WWCPItems
     G322("IconG322_400b",FREIGHT, "European"),
     TraxxF140MS2("TRAXXF140MS2",FREIGHT, "European"),
     ES64U2("TaurusES6U2", UNIVERSAL,"European"),
-    ES64U4("TaurusES64U4", UNIVERSAL,"European"),
+    ES64U4("ES64U4", UNIVERSAL,"European"),
     MZIV("IconMzIV",FREIGHT, "European"),
-    SGNSS60("SGNSS60", FREIGHT, "European")
+    SGNSS60("SGGNS60", FREIGHT, "European"),
+    RheingoldSalon1("RheingoldSalon1",PASSENGER,"European"),
+    RheingoldSalon2("RheingoldSalon2",PASSENGER,"European"),
+    RheingoldKitchen1("RheingoldKitchen1",PASSENGER,"European"),
+    RheingoldKitchen2("RheingoldKitchen2",PASSENGER,"European"),
+    RheingoldBagage("RheingoldBagage",BAGGAGE,"European"),
+    EurofimaPresidentiale("EurofimaPresidentiale",PASSENGER,"European")
     //minecraftTemplateUntradeable("template-icon", STEAM)
     ;
 

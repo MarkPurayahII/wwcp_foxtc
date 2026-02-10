@@ -10,6 +10,7 @@ import wwcp.common.entity.locomotives.tenders.EntityT32ChristmasTender;
 import wwcp.common.entity.passenger.Christmas.*;
 import wwcp.common.entity.passenger.EntitySLRVC;
 import wwcp.common.entity.passenger.Eurofima.*;
+import wwcp.common.entity.passenger.Rheingold1928.*;
 import wwcp.common.library.WWCPItems;
 import wwcp.common.wwcp;
 
@@ -438,6 +439,16 @@ public class WWCPEntityHandler
                 );
 
         Traincraft.traincraftRegistry
+                .RegisterRollingStockEntity(WWCPItems.EurofimaPresidentiale.item,
+                        new TrainRecord(Transport.EurofimaPresidentiale().name, EntityEurofimaPresidentiale.class, WWCPItems.EurofimaPresidentiale.item,
+                                Transport.EurofimaPresidentiale().additionalText2, Transport.EurofimaPresidentiale().weightinKGs,
+                                new String[] {"Yellow"}, 5, 0, 0, 0,
+                                0, 0, 0,
+                                0, 0, 0),
+                        Instance()
+                );
+
+        Traincraft.traincraftRegistry
                 .RegisterRollingStockEntity(WWCPItems.RheingoldSalon1Christmas.item,
                         new TrainRecord(Transport.RheingoldSalon1Christmas().name, Entity1stClassRheingoldChristmas.class, WWCPItems.RheingoldSalon1Christmas.item,
                                 Transport.RheingoldSalon1Christmas().additionalText2, Transport.RheingoldSalon1Christmas().weightinKGs,
@@ -468,6 +479,56 @@ public class WWCPEntityHandler
                 .RegisterRollingStockEntity(WWCPItems.RheingoldSpeise2Christmas.item,
                         new TrainRecord(WWCPItems.RheingoldSpeise2Christmas.name(), Entity2ndClassRheingoldKitchenChristmas.class, WWCPItems.RheingoldSpeise2Christmas.item,
                                 Transport.RheingoldKitchen2Christmas().additionalText2, Transport.RheingoldKitchen2Christmas().weightinKGs,
+                                new String[] {"Yellow"}, 5, 1, 0, 0,
+                                0, 0, 0,
+                                0, 0, 0),
+                        Instance()
+                );
+
+        Traincraft.traincraftRegistry
+                .RegisterRollingStockEntity(WWCPItems.RheingoldSalon1.item,
+                        new TrainRecord(WWCPItems.RheingoldSalon1.name(), Entity1stClassRheingoldSalon.class, WWCPItems.RheingoldSalon1.item,
+                                Transport.RheingoldSalon1().additionalText2, Transport.RheingoldSalon1().weightinKGs,
+                                new String[] {"Yellow"}, 5, 1, 0, 0,
+                                0, 0, 0,
+                                0, 0, 0),
+                        Instance()
+                );
+
+        Traincraft.traincraftRegistry
+                .RegisterRollingStockEntity(WWCPItems.RheingoldSalon2.item,
+                        new TrainRecord(WWCPItems.RheingoldSalon2.name(), Entity2ndClassRheingoldSalon.class, WWCPItems.RheingoldSalon2.item,
+                                Transport.RheingoldSalon2().additionalText2, Transport.RheingoldSalon2().weightinKGs,
+                                new String[] {"Yellow"}, 5, 1, 0, 0,
+                                0, 0, 0,
+                                0, 0, 0),
+                        Instance()
+                );
+
+        Traincraft.traincraftRegistry
+                .RegisterRollingStockEntity(WWCPItems.RheingoldKitchen1.item,
+                        new TrainRecord(WWCPItems.RheingoldKitchen1.name(), Entity1stClassRheingoldKitchen.class, WWCPItems.RheingoldKitchen1.item,
+                                Transport.RheingoldKitchen1().additionalText2, Transport.RheingoldKitchen1().weightinKGs,
+                                new String[] {"Yellow"}, 5, 1, 0, 0,
+                                0, 0, 0,
+                                0, 0, 0),
+                        Instance()
+                );
+
+        Traincraft.traincraftRegistry
+                .RegisterRollingStockEntity(WWCPItems.RheingoldKitchen2.item,
+                        new TrainRecord(WWCPItems.RheingoldKitchen2.name(), Entity2ndClassRheingoldKitchen.class, WWCPItems.RheingoldKitchen2.item,
+                                Transport.RheingoldKitchen2().additionalText2, Transport.RheingoldKitchen2().weightinKGs,
+                                new String[] {"Yellow"}, 5, 1, 0, 0,
+                                0, 0, 0,
+                                0, 0, 0),
+                        Instance()
+                );
+
+        Traincraft.traincraftRegistry
+                .RegisterRollingStockEntity(WWCPItems.RheingoldBagage.item,
+                        new TrainRecord(WWCPItems.RheingoldBagage.name(), EntityRheingoldBaggage.class, WWCPItems.RheingoldBagage.item,
+                                Transport.RheingoldBaggage().additionalText2, Transport.RheingoldBaggage().weightinKGs,
                                 new String[] {"Yellow"}, 5, 1, 0, 0,
                                 0, 0, 0,
                                 0, 0, 0),
