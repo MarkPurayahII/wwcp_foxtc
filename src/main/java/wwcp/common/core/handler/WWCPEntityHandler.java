@@ -513,6 +513,15 @@ public class WWCPEntityHandler
                                 0, 0, 0),
                         Instance()
                 );
+        Traincraft.traincraftRegistry
+                .RegisterRollingStockEntity(WWCPItems.Hbbillns.item,
+                        new TrainRecord(WWCPItems.Hbbillns.name(), EntityHbbillns.class, WWCPItems.Hbbillns.item,
+                                Transport.Hbbillns().additionalText2, Transport.Hbbins().weightinKGs,
+                                new String[] {"Black","Red","Green","Brown"}, 5, 32, 0, 0,
+                                0, 0, 0,
+                                0, 0, 0),
+                        Instance()
+                );
 
         //32, 18, 9
         Traincraft.traincraftRegistry
