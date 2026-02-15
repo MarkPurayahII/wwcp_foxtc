@@ -87,6 +87,12 @@ public class EntityLgns extends AbstractStandardFixedFreightCar {
                             case "pink":
                                 texturePath = "textures/freightskins/Lgns/LGNS_40HBGS";
                                 break;
+                            case "lime":
+                                texturePath = "textures/freightskins/Lgns/LGNS_20MSC-MRSK";
+                                break;
+                            case "magenta":
+                                texturePath = "textures/freightskins/Lgns/LGNS_20PO-EVRG";
+                                break;
 
                         }
                         texturePath += ".png";
