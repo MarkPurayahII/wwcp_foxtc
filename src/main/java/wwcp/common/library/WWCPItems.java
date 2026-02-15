@@ -55,11 +55,13 @@ public enum WWCPItems
     Hbbins("IconHbbins",train.common.library.TypeOfRollingStock.FREIGHT, "European"),
     Hbbillns("IconHbbillns",train.common.library.TypeOfRollingStock.FREIGHT, "European"),
     Habbiins_17("IconHabbins",train.common.library.TypeOfRollingStock.FREIGHT, "European"),
-    G322("IconG322_400b",train.common.library.TypeOfRollingStock.FREIGHT, "European"),
+    G322("IconG322_400b",train.common.library.TypeOfRollingStock.DIESEL, "European"),
     TraxxF140MS2("TRAXXF140MS2",train.common.library.TypeOfRollingStock.FREIGHT, "European"),
     ES64U2("TaurusES6U2", train.common.library.TypeOfRollingStock.EMPTY,"European"),
-    MZIV("IconMzIV",train.common.library.TypeOfRollingStock.FREIGHT, "European"),
-    MZIII("IconMzI-III",train.common.library.TypeOfRollingStock.FREIGHT, "European"),
+    MZIV("IconMzIV",train.common.library.TypeOfRollingStock.DIESEL, "European"),
+    MZIII("IconMzI-III",train.common.library.TypeOfRollingStock.DIESEL, "European"),
+    DSBMH("IconDSBMH",train.common.library.TypeOfRollingStock.DIESEL, "European"),
+    Lgns("IconLgns",train.common.library.TypeOfRollingStock.FREIGHT, "European"),
     //minecraftTemplateUntradeable("template-icon", STEAM)
     ;
 

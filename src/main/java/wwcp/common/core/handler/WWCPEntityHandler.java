@@ -250,6 +250,16 @@ public class WWCPEntityHandler
                                 0.65, -5.5, 10000),
                         Instance()
                 );
+        Traincraft.traincraftRegistry
+                .RegisterRollingStockEntity(WWCPItems.DSBMH.item,
+                        new TrainRecord(Transport.ClassMH().name, EntityDSBMH.class, WWCPItems.DSBMH.item,
+                                Transport.ClassMH().additionalText2, Transport.ClassMH().weightinKGs,
+                                new String[] {"Black","Red","Green"},
+                                5, 2, 0.95, (int)Transport.ClassMH().topSpeed,
+                                (int)Transport.ClassMH().metric_horsepower, 20, 0,
+                                0.95, -2, 1000),
+                        Instance()
+                );
 
         /**
          * ELECTRIC LOCOMOTIVES
@@ -553,6 +563,15 @@ public class WWCPEntityHandler
                         Instance()
                 );
 
+        Traincraft.traincraftRegistry
+                .RegisterRollingStockEntity(WWCPItems.Lgns.item,
+                        new TrainRecord(WWCPItems.Lgns.name(), EntityLgns.class, WWCPItems.Lgns.item,
+                                Transport.Lgns().additionalText2, Transport.Lgns().weightinKGs,
+                                new String[] {"Black","Red","Green","Brown","Blue","Purple","Cyan","LightGrey","Pink"}, 5, 32, 0, 0,
+                                0, 0, 0,
+                                0, 0, 0),
+                        Instance()
+                );
 
     }
 }
