@@ -1,5 +1,5 @@
 //This File was created with the Minecraft-SMP Modelling Toolbox 2.3.0.0
-// Copyright (C) 2019 Minecraft-SMP.de
+// Copyright (C) 2026 Minecraft-SMP.de
 // This file is for Flan's Flying Mod Version 4.0.x+
 
 // Model: Rheingold 1928 Salon 1st
@@ -9,20 +9,30 @@
 
 package wwcp.client.render.rollingstock.passengerStock.Rheingold; //Path where the model is located
 
-
+import net.minecraft.entity.Entity;
+import net.minecraft.util.ResourceLocation;
+import org.lwjgl.opengl.GL11;
 import tmt.ModelConverter;
 import tmt.ModelRendererTurbo;
+import tmt.Tessellator;
+import wwcp.client.render.rollingstock.bogies.EUBogies.GorlitzBack;
+import wwcp.client.render.rollingstock.bogies.EUBogies.GorlitzFront;
+import wwcp.common.library.Info;
 
-public class RheingoldSpeiseOne extends ModelConverter //Same as Filename
+public class Rheingold1928Kitchen1 extends ModelConverter //Same as Filename
 {
 	int textureX = 512;
 	int textureY = 512;
 
-	public RheingoldSpeiseOne() //Same as Filename
+	public Rheingold1928Kitchen1() //Same as Filename
 	{
 		bodyModel = new ModelRendererTurbo[470];
 
 		initbodyModel_1();
+
+		translateAll(0F, 0F, 0F);
+
+
 		flipAll();
 	}
 
@@ -1910,5 +1920,24 @@ public class RheingoldSpeiseOne extends ModelConverter //Same as Filename
 
 		bodyModel[469].addShapeBox(0F, 0F, 0F, 8, 1, 6, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 446
 		bodyModel[469].setRotationPoint(56F, 2F, -3F);
+	}
+	GorlitzFront frontBogie = new GorlitzFront();
+	GorlitzBack backBogie = new GorlitzBack();
+
+	@Override
+	public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) {
+		super.render(entity, f, f1, f2, f3, f4, f5);
+
+		Tessellator.bindTexture(new ResourceLocation(Info.modID, "textures/bogies/EUBogies/RheingoldBogie.png"));
+		GL11.glPushMatrix();
+		GL11.glTranslatef(3.85f,0f,0);
+		backBogie.render(entity, f, f1, f2, f3, f4, f5);
+		GL11.glPopMatrix();
+
+		Tessellator.bindTexture(new ResourceLocation(Info.modID, "textures/bogies/EUBogies/RheingoldBogie.png"));
+		GL11.glPushMatrix();
+		GL11.glTranslatef(-3.6f,0f,0);
+		frontBogie.render(entity, f, f1, f2, f3, f4, f5);
+		GL11.glPopMatrix();
 	}
 }

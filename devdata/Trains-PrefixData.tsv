@@ -143,9 +143,7 @@ item.tc:minecart25Ton	GE 25-ton	com.jcirmodelsquad.tcjcir.vehicles.locomotives.d
 item.tc:minecart44Ton	GE 44-ton	com.jcirmodelsquad.tcjcir.vehicles.locomotives.diesel.DieselGE44Ton	44_ton_
 item.tc:minecartGP13	GP13	com.jcirmodelsquad.tcjcir.vehicles.locomotives.diesel.DieselGP13	gp13_
 item.tc:minecartGP15	GP15	com.jcirmodelsquad.tcjcir.vehicles.locomotives.diesel.DieselGP15	gp15_
-item.tc:minecartGP15T	GP15T	com.jcirmodelsquad.tcjcir.vehicles.locomotives.diesel.DieselGP15T	gp15t_
 item.tc:minecartGP18	GP18	com.jcirmodelsquad.tcjcir.vehicles.locomotives.diesel.DieselGP18	gp18_
-item.tc:minecartGP20	GP20	com.jcirmodelsquad.tcjcir.vehicles.locomotives.diesel.DieselGP20	gp20_
 item.tc:minecartGP30	GP30	com.jcirmodelsquad.tcjcir.vehicles.locomotives.diesel.DieselGP30	gp30_
 item.tc:minecartGP35	GP35	com.jcirmodelsquad.tcjcir.vehicles.locomotives.diesel.DieselGP35	gp35_
 item.tc:minecartGP38	GP38	com.jcirmodelsquad.tcjcir.vehicles.locomotives.diesel.DieselGP38	gp38_
@@ -283,9 +281,13 @@ item.tc:minecartW_A11	SEC W-A11	com.jcirmodelsquad.tcjcir.vehicles.locomotives.e
 item.tc:minecartW_A55	SEC W-A55	com.jcirmodelsquad.tcjcir.vehicles.locomotives.eletric.ElectricW_A55	W_A55_
 item.tc:minecartW_A55_Combine	SEC W-A55 Combine	com.jcirmodelsquad.tcjcir.vehicles.locomotives.eletric.ElectricW_A55_Combine	W_A55_Combine_
 item.wwcp:RheingoldSalon1Christmas	SA4u28Christmas	wwcp.common.entity.passenger.Christmas.Entity1stClassRheingoldChristmas	ChristmasSalon
+item.wwcp:RheingoldKitchen1	RheingoldKitchen1	wwcp.common.entity.passenger.Rheingold1928.Entity1stClassRheingoldKitchen	RheingoldKitchen1
 item.wwcp:RheingoldSpeise1Christmas	RheingoldSpeise1Christmas	wwcp.common.entity.passenger.Christmas.Entity1stClassRheingoldKitchenChristmas	ChristmasSpeise1
+item.wwcp:RheingoldSalon1	RheingoldSalon1	wwcp.common.entity.passenger.Rheingold1928.Entity1stClassRheingoldSalon	RheingoldSalon1
 item.wwcp:RheingoldSalon2Christmas	RheingoldSalon2Christmas	wwcp.common.entity.passenger.Christmas.Entity2ndClassRheingoldChristmas	ChristmasSalon
+item.wwcp:RheingoldKitchen2	RheingoldKitchen2	wwcp.common.entity.passenger.Rheingold1928.Entity2ndClassRheingoldKitchen	RheingoldKitchen2
 item.wwcp:RheingoldSpeise2Christmas	RheingoldSpeise2Christmas	wwcp.common.entity.passenger.Christmas.Entity2ndClassRheingoldKitchenChristmas	ChristmasSalon
+item.wwcp:RheingoldSalon2	RheingoldSalon2	wwcp.common.entity.passenger.Rheingold1928.Entity2ndClassRheingoldSalon	RheingoldSalon2
 item.wwcp:AAR40ft	AAR40ft	wwcp.common.entity.freight.EntityAAR40ft	AAR40ft
 item.wwcp:BR103	BR103	wwcp.common.entity.locomotives.electrics.EntityBR103	BR103
 item.wwcp:BR145	BR145	wwcp.common.entity.locomotives.electrics.EntityBR145	BR145
@@ -311,10 +313,12 @@ item.wwcp:EP2_Center	EP2_Center	wwcp.common.entity.freight.EntityEP2_Center	Enti
 item.wwcp:EP3	EP3	wwcp.common.entity.locomotives.electrics.EntityEP3	EP3
 item.wwcp:ES2	ES2	wwcp.common.entity.locomotives.electrics.EntityES2	ES2
 item.wwcp:ES64U2	ES64U2	wwcp.common.entity.locomotives.electrics.EntityES64U2	ES64U2
+item.wwcp:ES64U4	ES64U4	wwcp.common.entity.locomotives.electrics.EntityES64U4	ES64U4
 item.wwcp:EurofimaCompartment1_2	EurofimaCompartments1_2	wwcp.common.entity.passenger.Eurofima.EntityEurofima1st2ndClassCompartment	Eurofima1_2_Compartment
 item.wwcp:EurofimaOpen1	Eurofima Open 1	wwcp.common.entity.passenger.Eurofima.EntityEurofima1stClass	Eurofima1stClass
 item.wwcp:EurofimaCompartment1	EurofimaCompartments1	wwcp.common.entity.passenger.Eurofima.EntityEurofima1stClassCompartment	Eurofima1stClassCompartment
 item.wwcp:EurofimaPanorama	Eurofima Panorama	wwcp.common.entity.passenger.Eurofima.EntityEurofimaPanorama	Eurofima1_2_Compartment
+item.wwcp:EurofimaPresidentiale	EurofimaPresidentiale	wwcp.common.entity.passenger.Eurofima.EntityEurofimaPresidentiale	EurofimaPresidentiale
 item.tc:minecartFlatCartLogs_DB	Freight Flat Cart Logs DB	train.common.entity.rollingStock.freight.EntityFlatCarLogs_DB	flatCarLogs_DB_
 item.tc:minecartFlatCartRail_DB	Freight Flat Cart Rails DB	train.common.entity.rollingStock.freight.EntityFlatCarRails_DB	flatCarRails_DB_
 item.tc:minecartFlatCart_DB	Flat Cart DB	train.common.entity.rollingStock.freight.EntityFlatCar_DB	flatCar_DB_
@@ -476,8 +480,13 @@ item.tc:minecartPropagandaUSSR	Propaganda USSR	train.common.entity.rollingStock.
 item.wwcp:RS10	RS10	wwcp.common.entity.locomotives.diesels.EntityRS10	RS10
 item.wwcp:RS18	RS18	wwcp.common.entity.locomotives.diesels.EntityRS18	RS18
 item.wwcp:RS18C	RS18C	wwcp.common.entity.locomotives.diesels.EntityRS18C	RS18C
+item.wwcp:RheingoldBagage	RheingoldBagage	wwcp.common.entity.passenger.Rheingold1928.EntityRheingoldBaggage	RheingoldBaggage
 item.wwcp:SD45	SD45	wwcp.common.entity.locomotives.diesels.EntitySD45	SD45
 item.wwcp:SD45X	SD45X	wwcp.common.entity.locomotives.diesels.EntitySD45X	SD45X
+item.wwcp:SD70M	SD70M	wwcp.common.entity.locomotives.diesels.EntitySD70M	SD70M
+item.wwcp:SD75I	SD75I	wwcp.common.entity.locomotives.diesels.EntitySD75I	SD75I
+item.wwcp:SD75M	SD75M	wwcp.common.entity.locomotives.diesels.EntitySD75M	SD75M
+item.wwcp:SGNSS60	SGNSS60	wwcp.common.entity.freight.EntitySGNSS60	SGGNS60
 item.wwcp:SLRV	SLRV	wwcp.common.entity.locomotives.electrics.EntitySLRV	SLRV
 item.wwcp:SLRVC	SLRVC	wwcp.common.entity.passenger.EntitySLRVC	SLRVC
 item.tc:minecartStockCar	Stock Cart	train.common.entity.rollingStock.EntityStockCar	stockcar_
@@ -657,7 +666,6 @@ item.tc:minecartRoundHopper	Freight Round Covered Hopper	com.jcirmodelsquad.tcjc
 item.tc:minecartSBMS	SBMS	com.jcirmodelsquad.tcjcir.vehicles.locomotives.SBMS	SBMS_
 item.tc:minecartSMSC1	SMSC1	com.jcirmodelsquad.tcjcir.vehicles.locomotives.SMSC1	SMSC1_
 item.tc:minecartSP_B50	SP_B50	com.jcirmodelsquad.tcjcir.vehicles.rollingstock.freight.SP_B50	sp_b_50_
-item.tc:minecartSP_B50_AAR	SP_B50_AAR	com.jcirmodelsquad.tcjcir.vehicles.rollingstock.freight.SP_B50_AAR	sp_b_50_28_
 item.tc:minecartSkeletonLogCar	Skeleton	com.jcirmodelsquad.tcjcir.vehicles.rollingstock.freight.SkeletonLogCar	SkeletonLogCar_
 item.tc:minecartSlugMA	SlugMA	com.jcirmodelsquad.tcjcir.vehicles.locomotives.SlugMA	SMA_
 item.tc:minecartStampedeRack	StampedeRack	com.jcirmodelsquad.tcjcir.vehicles.rollingstock.misc.StampedeRack	cswr_stampederack_
