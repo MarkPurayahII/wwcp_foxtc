@@ -72,9 +72,12 @@ public enum WWCPItems
     RheingoldKitchen2("RheingoldKitchen2",PASSENGER,"European"),
     RheingoldBagage("RheingoldBagage",BAGGAGE,"European"),
     EurofimaPresidentiale("EurofimaPresidentiale",PASSENGER,"European"),
-    MZIII("IconMzI-III",train.common.library.TypeOfRollingStock.DIESEL, "European"),
-    DSBMH("IconDSBMH",train.common.library.TypeOfRollingStock.DIESEL, "European"),
-    Lgns("IconLgns",train.common.library.TypeOfRollingStock.FREIGHT, "European"),
+    MZIII("IconMzI-III",DIESEL, "European"),
+    DSBMH("IconDSBMH",DIESEL, "European"),
+    Hbbillns("IconHbbillns",FREIGHT, "European"),
+    Lgns("IconLgns",FREIGHT, "European"),
+    GS("IconGS",FREIGHT, "European"),
+    DSB735("IconDSB735",FREIGHT, "European"),
     //minecraftTemplateUntradeable("template-icon", STEAM)
     ;
 

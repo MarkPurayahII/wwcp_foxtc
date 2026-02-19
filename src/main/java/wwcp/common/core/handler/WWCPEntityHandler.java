@@ -257,7 +257,7 @@ public class WWCPEntityHandler
                                 Transport.ClassMK().additionalText2, Transport.ClassMK().weightinKGs,
                                 new String[] {"Black","Red","Green","Brown","Blue","White","Lime","Magenta","LightGrey","Grey","Pink"},
                                 5, 2, 0.95, (int)Transport.ClassMK().topSpeed,
-                                (int)Transport.ClassMK().metric_horsepower, 20, 0,
+                                (int)Transport.ClassMK().metric_horsepower, 20, 80,
                                 0.95, -2, 1000),
                         Instance()
                 );
@@ -267,7 +267,7 @@ public class WWCPEntityHandler
                                 Transport.MZIV().additionalText2, Transport.MZIV().weightinKGs,
                                 new String[] {"Black","Red","Green","Brown","Magenta","Blue"},
                                 5, 2, 1.25, (int)Transport.MZIV().topSpeed,
-                                (int)Transport.MZIV().metric_horsepower, 60, 0,
+                                (int)Transport.MZIV().metric_horsepower, 60, 160,
                                 0.65, -5.5, 10000),
                         Instance()
                 );
@@ -277,7 +277,7 @@ public class WWCPEntityHandler
                                 Transport.MZIII().additionalText2, Transport.MZIII().weightinKGs,
                                 new String[] {"Black","Red","Green"},
                                 5, 2, 1.25, (int)Transport.MZIII().topSpeed,
-                                (int)Transport.MZIII().metric_horsepower, 60, 0,
+                                (int)Transport.MZIII().metric_horsepower, 60, 160,
                                 0.65, -5.5, 10000),
                         Instance()
                 );
@@ -287,7 +287,7 @@ public class WWCPEntityHandler
                                 Transport.ClassMH().additionalText2, Transport.ClassMH().weightinKGs,
                                 new String[] {"Black","Red","Green"},
                                 5, 2, 0.95, (int)Transport.ClassMH().topSpeed,
-                                (int)Transport.ClassMH().metric_horsepower, 20, 0,
+                                (int)Transport.ClassMH().metric_horsepower, 20, 80,
                                 0.95, -2, 1000),
                         Instance()
                 );
@@ -680,6 +680,26 @@ public class WWCPEntityHandler
                         new TrainRecord(WWCPItems.SGNSS60.name(), EntitySGNSS60.class, WWCPItems.SGNSS60.item,
                                 Transport.SGNSS60().additionalText2, Transport.SGNSS60().weightinKGs,
                                 new String[] {"Black","Grey","LightGrey","Purple"}, 5, 54, 0, 0,
+                                0, 0, 0,
+                                0, 0, 0),
+                        Instance()
+                );
+
+        Traincraft.traincraftRegistry
+                .RegisterRollingStockEntity(WWCPItems.GS.item,
+                        new TrainRecord(WWCPItems.GS.name(), EntityGS.class, WWCPItems.GS.item,
+                                Transport.GSVan().additionalText2, Transport.GSVan().weightinKGs,
+                                new String[] {"Black","Red","Green","Brown","Blue"}, 5, 32, 0, 0,
+                                0, 0, 0,
+                                0, 0, 0),
+                        Instance()
+                );
+
+        Traincraft.traincraftRegistry
+                .RegisterRollingStockEntity(WWCPItems.DSB735.item,
+                        new TrainRecord(WWCPItems.DSB735.name(), EntityDSB735.class, WWCPItems.DSB735.item,
+                                Transport.DSB735Tanker().additionalText2, Transport.DSB735Tanker().weightinKGs,
+                                new String[] {"Black"}, 5, 32, 0, 0,
                                 0, 0, 0,
                                 0, 0, 0),
                         Instance()
