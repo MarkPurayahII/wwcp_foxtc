@@ -705,5 +705,25 @@ public class WWCPEntityHandler
                         Instance()
                 );
 
+        Traincraft.traincraftRegistry
+                .RegisterRollingStockEntity(WWCPItems.DSBZE.item,
+                        new TrainRecord(WWCPItems.DSBZE.name(), EntityDSBZETanker.class, WWCPItems.DSBZE.item,
+                                Transport.DSBZETanker().additionalText2, Transport.DSBZETanker().weightinKGs,
+                                new String[] {"Black"}, 5, 32, 0, 0,
+                                0, 0, 0,
+                                0, 0, 0),
+                        Instance()
+                );
+
+        Traincraft.traincraftRegistry
+                .RegisterRollingStockEntity(WWCPItems.DSBE.item,
+                        new TrainRecord(WWCPItems.DSBE.name(), EntityDSBEHopper.class, WWCPItems.DSBE.item,
+                                Transport.DSBCarE().additionalText2, Transport.DSBCarE().weightinKGs,
+                                new String[] {"Black"}, 5, 32, 0, 0,
+                                0, 0, 0,
+                                0, 0, 0),
+                        Instance()
+                );
+
     }
 }

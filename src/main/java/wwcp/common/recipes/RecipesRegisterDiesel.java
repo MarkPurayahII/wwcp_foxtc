@@ -141,7 +141,7 @@ public class RecipesRegisterDiesel extends AbstractRecipeHandler {
                     null,
                     new ItemStack(ItemIDs.partTurboExhaust.item, 3),
                     new ItemStack(ItemIDs.dieselengine.item, 3),
-                    new ItemStack(ItemIDs.bogie.item, 2),
+                    new ItemStack(ItemIDs.bogie.item, 6),
                     new ItemStack(ItemIDs.steelframe.item, 3),
                     new ItemStack(itemSteel, 2, itemDamageSteel),
                     new ItemStack(WWCPItems.MZIV.item), 1);
@@ -153,7 +153,7 @@ public class RecipesRegisterDiesel extends AbstractRecipeHandler {
                     null,
                     new ItemStack(ItemIDs.partTurboExhaust.item, 2),
                     new ItemStack(ItemIDs.dieselengine.item, 2),
-                    new ItemStack(ItemIDs.bogie.item, 2),
+                    new ItemStack(ItemIDs.bogie.item, 6),
                     new ItemStack(ItemIDs.steelframe.item, 2),
                     new ItemStack(itemSteel, 2, itemDamageSteel),
                     new ItemStack(WWCPItems.MZIII.item), 1);

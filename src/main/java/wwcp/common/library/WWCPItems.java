@@ -78,6 +78,8 @@ public enum WWCPItems
     Lgns("IconLgns",FREIGHT, "European"),
     GS("IconGS",FREIGHT, "European"),
     DSB735("IconDSB735",FREIGHT, "European"),
+    DSBZE("IconDSBZE",FREIGHT, "European"),
+    DSBE("IconDSBE",FREIGHT, "European"),
     //minecraftTemplateUntradeable("template-icon", STEAM)
     ;
 
