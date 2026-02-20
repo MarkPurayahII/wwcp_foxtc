@@ -291,6 +291,27 @@ public class WWCPEntityHandler
                                 0.95, -2, 1000),
                         Instance()
                 );
+        Traincraft.traincraftRegistry
+                .RegisterRollingStockEntity(WWCPItems.MZI.item,
+                        new TrainRecord(Transport.MZI().name, EntityMZI.class, WWCPItems.MZI.item,
+                                Transport.MZI().additionalText2, Transport.MZI().weightinKGs,
+                                new String[] {"Black","Red","Green","Brown","Blue","Purple","Cyan","Lightgrey","Grey"},
+                                5, 2, 1.25, (int)Transport.MZI().topSpeed,
+                                (int)Transport.MZI().metric_horsepower, 60, 160,
+                                0.65, -5.5, 10000),
+                        Instance()
+                );
+
+        Traincraft.traincraftRegistry
+                .RegisterRollingStockEntity(WWCPItems.MZII.item,
+                        new TrainRecord(Transport.MZII().name, EntityMZII.class, WWCPItems.MZII.item,
+                                Transport.MZII().additionalText2, Transport.MZII().weightinKGs,
+                                new String[] {"Black","Red","Green","Brown","Blue","Yellow","Cyan","Lightgrey","Grey"},
+                                5, 2, 1.25, (int)Transport.MZII().topSpeed,
+                                (int)Transport.MZII().metric_horsepower, 60, 160,
+                                0.65, -5.5, 10000),
+                        Instance()
+                );
 
         /**
          * ELECTRIC LOCOMOTIVES
