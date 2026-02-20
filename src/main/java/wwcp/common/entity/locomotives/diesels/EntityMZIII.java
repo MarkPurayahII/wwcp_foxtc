@@ -18,7 +18,9 @@ public class EntityMZIII extends DieselTrain
 {
     public EntityMZIII(World world) {
         super(world, LiquidManager.dieselFilter());
-        InsertTexture(0, "");
+        InsertTexture(0, "DSB MZ III 1980s-2000s");
+        InsertTexture(1, "DSB Mz III 1972-1980s");
+        InsertTexture(2, "NEG Niebüll GMBH Mz III");
 
     }
 
