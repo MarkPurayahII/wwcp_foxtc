@@ -72,7 +72,7 @@ public class EntityMZIII extends DieselTrain
                         "smoke",
                         new ArrayList<double[]>() {
                             {
-                                add(new double[]{-0.15D, 1.35D, 0.0D});
+                                add(new double[]{-0.15D, 1.5D, 0.0D});
                             }},
                         "", null, 10, 2)
                 {
