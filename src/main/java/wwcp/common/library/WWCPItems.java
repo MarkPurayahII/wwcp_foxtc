@@ -64,7 +64,7 @@ public enum WWCPItems
     TraxxF140MS2("TRAXXF140MS2",FREIGHT, "European"),
     ES64U2("TaurusES6U2", UNIVERSAL,"European"),
     ES64U4("ES64U4", UNIVERSAL,"European"),
-    MZIV("IconMzIV",FREIGHT, "European"),
+    MZIV("IconMzIV",DIESEL, "European"),
     SGNSS60("SGGNS60", FREIGHT, "European"),
     RheingoldSalon1("RheingoldSalon1",PASSENGER,"European"),
     RheingoldSalon2("RheingoldSalon2",PASSENGER,"European"),
@@ -82,6 +82,8 @@ public enum WWCPItems
     DSBE("IconDSBE",FREIGHT, "European"),
     MZI("IconMzI-III",DIESEL, "European"),
     MZII("IconMzI-III",DIESEL, "European"),
+    ME("IconME",DIESEL, "European"),
+    DSBFII("IconFII",STEAM, "European"),
     //minecraftTemplateUntradeable("template-icon", STEAM)
     ;
 
