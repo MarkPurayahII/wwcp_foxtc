@@ -24,7 +24,7 @@ public class EntityDSBEHopper extends AbstractStandardFixedFreightCar {
     }
 
     public float getOptimalDistance(EntityMinecart cart) {
-        return 2.7F;
+        return 2.6F;
     }
 
     @Override
@@ -52,7 +52,7 @@ public class EntityDSBEHopper extends AbstractStandardFixedFreightCar {
                 new TrainRenderRecord(wwcp.common.library.Info.modID,
                         EntityDSBEHopper.class, new DSBCarE(),
                         "DSBE",
-                        new float[]{-0.0f, 0.15F, 0.0F},
+                        new float[]{-0.14F, 0.15F, 0.0F},
                         new float[]{0F, 180F, 180F},
                         null) {
                     @Override

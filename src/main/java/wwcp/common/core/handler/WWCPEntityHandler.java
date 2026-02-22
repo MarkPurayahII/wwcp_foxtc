@@ -6,7 +6,7 @@ import wwcp.common.entity.freight.*;
 import wwcp.common.entity.locomotives.diesels.*;
 import wwcp.common.entity.locomotives.electrics.*;
 import wwcp.common.entity.locomotives.steam.EntityChristmasBR01;
-import wwcp.common.entity.locomotives.steam.EntityDSBFII;
+import wwcp.common.entity.locomotives.steam.*;
 import wwcp.common.entity.locomotives.tenders.EntityT32ChristmasTender;
 import wwcp.common.entity.passenger.Christmas.*;
 import wwcp.common.entity.passenger.EntitySLRVC;
@@ -57,6 +57,16 @@ public class WWCPEntityHandler
                                 Transport.DSBFII().additionalText2, Transport.DSBFII().weightinKGs,
                                 new String[] {"black","brown"}, 5, 0, 1.1, (int)Transport.DSBFII().topSpeed,
                                 (int)Transport.DSBFII().metric_horsepower, 30, 200,
+                                0.8, -2f, 8000),
+                        Instance()
+                );
+
+        Traincraft.traincraftRegistry
+                .RegisterRollingStockEntity(WWCPItems.DSBFIII.item,
+                        new TrainRecord(WWCPItems.DSBFIII.name(), EntityDSBFIII.class, WWCPItems.DSBFIII.item,
+                                Transport.DSBFIII().additionalText2, Transport.DSBFIII().weightinKGs,
+                                new String[] {"black"}, 5, 0, 1.1, (int)Transport.DSBFIII().topSpeed,
+                                (int)Transport.DSBFIII().metric_horsepower, 30, 200,
                                 0.8, -2f, 8000),
                         Instance()
                 );
