@@ -93,6 +93,18 @@ public class RecipesRegisterRollingStock extends AbstractRecipeHandler {
                         new ItemStack(ItemIDs.bogie.item, 1), new ItemStack(ItemIDs.steelframe.item, 1), new ItemStack(ItemIDs.bogie.item, 1), new ItemStack(WWCPItems.DSBE.item),1);
             }
 
+            for (ItemStack dye : dyeWhite){//DSB ZE
+                betterAddRecipe(2, null, new ItemStack(ItemIDs.tankcarDome.item, 1), null,
+                        new ItemStack(Blocks.chest, 1), new ItemStack(ItemIDs.boiler.item, 1), new ItemStack(ItemIDs.steelframe.item, 1), dye,
+                        new ItemStack(ItemIDs.bogie.item, 1), new ItemStack(ItemIDs.steelframe.item, 1), new ItemStack(ItemIDs.bogie.item, 1), new ItemStack(WWCPItems.DSBZE.item),1);
+            }
+
+            for (ItemStack dye : dyeGray){//DSB 735
+                betterAddRecipe(2, null, new ItemStack(ItemIDs.tankcarDome.item, 2), null,
+                        new ItemStack(Blocks.chest, 1), new ItemStack(ItemIDs.boiler.item, 2), new ItemStack(ItemIDs.steelframe.item, 1), dye,
+                        new ItemStack(ItemIDs.bogie.item, 1), new ItemStack(ItemIDs.steelframe.item, 1), new ItemStack(ItemIDs.bogie.item, 1), new ItemStack(WWCPItems.DSB735.item),1);
+            }
+
             for (ItemStack dye : dyeGreen){
                 betterAddRecipe(3, null, //Hbbins
                         new ItemStack(WWCPCraftingItems.ContainerItem.item, 1),
