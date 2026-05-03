@@ -20,11 +20,16 @@ public class EntityGP35 extends DieselTrain
     public EntityGP35(World world) {
         super(world, LiquidManager.dieselFilter());
         InsertTexture(0, "SLSF Stripes");
-        InsertTexture(1, "CP Action Red");
-        InsertTexture(2,"CSX Ghost Blue");
-        InsertTexture(3,"MILW");
-        InsertTexture(4,"MP Screaming Eagle");
-        InsertTexture(5,"ATSF Pinstripe");
+        InsertTexture(1, "SLSF Type B Trucks");
+        InsertTexture(2, "SLSF Early Black");
+        InsertTexture(3, "CP Action Red");
+        InsertTexture(4,"CSX Ghost Blue");
+        InsertTexture(5,"MILW");
+        InsertTexture(6,"MP Screaming Eagle");
+        InsertTexture(7,"ATSF Pinstripe");
+        InsertTexture(8,"ATSF GP35U Bluebonnet");
+        InsertTexture(9,"ATSF GP35U Bluebonnet Nose Light");
+
     }
 
     public void updateRiderPosition() {
@@ -55,7 +60,7 @@ public class EntityGP35 extends DieselTrain
     }
 
     public final SoundRecord sound = new SoundRecord(this.getClass(), " ", 1.0F, "EMD_16_567D3_Notch8", 0.45F, 28, "EMD_16_567D3_Idle", 0.45F, 30, false, "emd_steelbell_3", 18,
-            new String[]{"leslie_s5t_2","nathan_m3h_1","leslie_s3l_2","leslie_s3l_2","leslie_s3l_2","leslie_s3l_2"});
+            new String[]{"leslie_s5t_2","leslie_s5t_2","leslie_s5t_2","nathan_m3h_1","leslie_s3l_2","leslie_s3l_2","leslie_s3l_2","leslie_s3l_2","leslie_s3l_2","leslie_s3l_2"});
     public SoundRecord getSoundRecord() {
         return sound;
     }
@@ -87,19 +92,31 @@ public class EntityGP35 extends DieselTrain
                                 texturePath = "textures/locomotive/Diesel/GP35/GP35_SLSF";
                                 break;
                             case "red":
-                                texturePath = "textures/locomotive/Diesel/GP35/GP35_CP";
+                                texturePath = "textures/locomotive/Diesel/GP35/GP35_SLSF2";
                                 break;
                             case "green":
-                                texturePath = "textures/locomotive/Diesel/GP35/GP35_CSXGB";
+                                texturePath = "textures/locomotive/Diesel/GP35/GP35_SLSF_Early";
                                 break;
                             case "brown":
-                                texturePath = "textures/locomotive/Diesel/GP35/GP35_MILW";
+                                texturePath = "textures/locomotive/Diesel/GP35/GP35_CP";
                                 break;
                             case "blue":
-                                texturePath = "textures/locomotive/Diesel/GP35/GP35_MP_SE";
+                                texturePath = "textures/locomotive/Diesel/GP35/GP35_CSXGB";
                                 break;
                             case "purple":
+                                texturePath = "textures/locomotive/Diesel/GP35/GP35_MILW";
+                                break;
+                            case "cyan":
+                                texturePath = "textures/locomotive/Diesel/GP35/GP35_MP_SE";
+                                break;
+                            case "lightgrey":
                                 texturePath = "textures/locomotive/Diesel/GP35/GP35_ATSF_Pinstripe";
+                                break;
+                            case "grey":
+                                texturePath = "textures/locomotive/Diesel/GP35/GP35U_ATSF";
+                                break;
+                            case "pink":
+                                texturePath = "textures/locomotive/Diesel/GP35/GP35U_ATSF2";
                                 break;
 
                         }

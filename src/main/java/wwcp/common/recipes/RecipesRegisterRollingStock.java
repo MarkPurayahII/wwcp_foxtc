@@ -56,7 +56,7 @@ public class RecipesRegisterRollingStock extends AbstractRecipeHandler
                         new ItemStack(ItemIDs.freightCarTruck.item, 2), new ItemStack(ItemIDs.steelframe.item, 4), new ItemStack(itemSteel, 6, itemDamageSteel), new ItemStack(WWCPItems.VertAPacAutorack.item), 1);
             }
 
-            for (ItemStack dye : dyeBrown) {//XM4A
+            for (ItemStack dye : dyeBlue) {//XM4A
                 betterAddRecipe(2, new ItemStack(ItemIDs.freightCarRibbing.item, 4), null, null, dye,
                         new ItemStack(Blocks.chest, 1), new ItemStack(ItemIDs.boxcarDoor.item, 2), null,
                         new ItemStack(ItemIDs.freightCarTruck.item, 2), new ItemStack(ItemIDs.steelframe.item, 2), new ItemStack(itemSteel, 2, itemDamageSteel), new ItemStack(WWCPItems.XM4A.item), 1);
@@ -72,6 +72,12 @@ public class RecipesRegisterRollingStock extends AbstractRecipeHandler
                 betterAddRecipe(2, new ItemStack(ItemIDs.freightCarRibbing.item, 4),null, null, dye,
                         new ItemStack(Blocks.chest, 1), new ItemStack(ItemIDs.hopperBay.item, 3), null,
                         new ItemStack(ItemIDs.freightCarTruck.item, 2), new ItemStack(ItemIDs.steelframe.item, 2), new ItemStack(itemSteel, 2, itemDamageSteel), new ItemStack(WWCPItems.PS2Early3Bay.item), 1);
+            }
+
+            for (ItemStack dye : dyeBrown) {//NP65Gondola
+                betterAddRecipe(2, null,null, null, dye,
+                        new ItemStack(Blocks.chest, 1), null, null,
+                        new ItemStack(ItemIDs.freightCarTruck.item, 2), new ItemStack(ItemIDs.steelframe.item, 6), new ItemStack(itemSteel, 4, itemDamageSteel), new ItemStack(WWCPItems.NP65Gondola.item), 1);
             }
 
             for (ItemStack dye : dyeYellow) {//SLRVC

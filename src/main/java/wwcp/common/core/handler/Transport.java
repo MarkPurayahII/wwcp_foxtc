@@ -1774,6 +1774,12 @@ public class Transport {
                 "", type, " Hopper", 31.7f, 120f, false, true, 0);
     }
 
+    //NP65Gondola
+    public static Rollingstock NP65Gondola() {
+        return new Rollingstock("NP65Gondola", "US", "1960-2000~", "",
+                "", type, " Gondola", 33.2f, 120f, false, true, 0);
+    }
+
     //GN 40ft Homebuilt Boxcar
     public static Rollingstock GN40HomebuiltBoxcar() {
         return new Rollingstock("GN40HomebuiltBoxcar", "America", "?", "",

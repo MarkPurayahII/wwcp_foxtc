@@ -439,6 +439,7 @@ item.tc:minecartLocoSteamVBShay	Loco Steam VB Shay	train.common.entity.rollingSt
 item.wwcp:M630	M630	wwcp.common.entity.locomotives.diesels.EntityM630	M630
 item.wwcp:M640	M640	wwcp.common.entity.locomotives.diesels.EntityM640	M640
 item.tc:minecartMailWagon_DB	Mail Wagon DB	train.common.entity.rollingStock.workcart.EntityMailWagen_DB	mailWagen_DB
+item.wwcp:NP65Gondola	NP65Gondola	wwcp.common.entity.freight.EntityNP65Gondola	NP65Gondola
 item.wwcp:OpenTriLevelAutorack	OpenTriLevelAutorack	wwcp.common.entity.freight.EntityOpenTriLevelAutorack	OpenTriLevelAutorack
 item.wwcp:PS2Early3Bay	PS2Early3Bay	wwcp.common.entity.freight.EntityPS2Early3Bay	PS2Early3Bay
 item.wwcp:Paccar64Woodchip	Paccar64Woodchip	wwcp.common.entity.freight.EntityPaccar64Woodchip	Paccar64Woodchip

@@ -55,6 +55,7 @@ public enum WWCPItems
     Paccar64Woodchip("item.Paccar64Woodchip_Icon",train.common.library.TypeOfRollingStock.FREIGHT, "American"),
     Gunderson596Woodchip("item.Gunderson596Woodchip_Icon",train.common.library.TypeOfRollingStock.FREIGHT, "American"),
     PS2Early3Bay("item.PS2Early3Bay_Icon",train.common.library.TypeOfRollingStock.FREIGHT, "American"),
+    NP65Gondola("item.NP65Gondola_Icon",train.common.library.TypeOfRollingStock.FREIGHT, "American"),
     OpenTriLevelAutorack("item.OpenTriLevelAutorack_Icon",train.common.library.TypeOfRollingStock.FREIGHT, "American"),
     VertAPacAutorack("item.VertAPac_Icon",train.common.library.TypeOfRollingStock.FREIGHT, "American"),
     Hbbins("IconHbbins",train.common.library.TypeOfRollingStock.FREIGHT, "European"),
