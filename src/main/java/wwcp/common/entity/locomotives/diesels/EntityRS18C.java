@@ -21,7 +21,8 @@ public class EntityRS18C extends DieselTrain
         InsertTexture(0, "PGE As Delivered");
         InsertTexture(1, "PGE Dark Green & Orange, Large Letters");
         InsertTexture(2, "PGE Dark Green & Orange");
-        InsertTexture(3, "BCOL Lightning Stripe");
+        InsertTexture(3, "PGE 2 Tone Green");
+        InsertTexture(4, "BCOL Lightning Stripe");
 
     }
 
@@ -53,7 +54,7 @@ public class EntityRS18C extends DieselTrain
     }
 
     public final SoundRecord sound = new SoundRecord(this.getClass(), " ", 1.0F, "ALCO_16_251C_Notch8", 0.45F, 28, "ALCO_16_251C_Idle", 0.45F, 30, false, "alco_bronzebell_3", 18,
-            new String[]{"nathan_m3h_2","nathan_m3h_2","nathan_k5l_3","nathan_k5l_3"});
+            new String[]{"nathan_m3h_2","nathan_m3h_2","nathan_k5l_3","nathan_k5l_3","nathan_k5l_3"});
     public SoundRecord getSoundRecord() {
         return sound;
     }
@@ -91,6 +92,9 @@ public class EntityRS18C extends DieselTrain
                                 texturePath = "textures/locomotive/Diesel/RS18/RS18M_PGE";
                                 break;
                             case "brown":
+                                texturePath = "textures/locomotive/Diesel/RS18/RS18M_PGE_2Tone";
+                                break;
+                            case "blue":
                                 texturePath = "textures/locomotive/Diesel/RS18/RS18M_BCOL_Striped";
                                 break;
 

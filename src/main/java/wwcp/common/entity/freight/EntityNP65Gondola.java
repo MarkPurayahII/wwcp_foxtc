@@ -7,12 +7,12 @@ import train.client.render.register.TrainRenderRecord;
 import train.common.Traincraft;
 import train.common.api.AbstractStandardFreightCar;
 import train.common.entity.CargoManager;
-import wwcp.client.render.rollingstock.freight.PS2Early3Bay;
+import wwcp.client.render.rollingstock.freight.NP65Gondola;
 import wwcp.common.core.handler.Transport;
 
-public class EntityPS2Early3Bay extends AbstractStandardFreightCar {
+public class EntityNP65Gondola extends AbstractStandardFreightCar {
 
-    public EntityPS2Early3Bay(World world) {
+    public EntityNP65Gondola(World world) {
         super(world);
     }
 
@@ -26,45 +26,44 @@ public class EntityPS2Early3Bay extends AbstractStandardFreightCar {
     @Override
     public void setupTextureDescription()
     {
-        InsertTexture(0, "Northern Pacific");
-        InsertTexture(1, "Rock Island");
-        InsertTexture(2, "DRGW");
-        InsertTexture(3, "BN");
-        InsertTexture(4, "ATSF Early");
-        InsertTexture(5, "ATSF");
-        InsertTexture(6, "UP");
-        InsertTexture(7, "Generic");
+        InsertTexture(0, "NP Gondola Empty");
+        InsertTexture(1, "NP Gondola Pea Gravel");
+        InsertTexture(2, "NP Gondola Oak Logs");
+        InsertTexture(3, "NP Gondola Birch Logs");
+        InsertTexture(4, "NP Gondola Spruce Logs");
+        InsertTexture(5, "NP Gondola Jungle Logs");
+        InsertTexture(6, "NP Gondola Acacia Logs");
     }
 
     public float getOptimalDistance(EntityMinecart cart) {
-        return 3.5F;
+        return 4.5F;
     }
 
     @Override
     public String transportCountry() {
-        return Transport.PS2Early3Bay().country;
+        return Transport.NP65Gondola().country;
     }
 
     @Override
     public String transportYear() {
-        return Transport.PS2Early3Bay().year;
+        return Transport.NP65Gondola().year;
     }
 
     public String getInventoryName() {
-        return Transport.PS2Early3Bay().name;
+        return Transport.NP65Gondola().name;
     }
 
     @Override
     public boolean isFictional() {
-        return Transport.PS2Early3Bay().fictional;
+        return Transport.NP65Gondola().fictional;
     }
 
     @Override
     public void onRenderInsertRecord() {
         Traincraft.traincraftRegistry.RegisterRollingStockModel(
                 new TrainRenderRecord(wwcp.common.library.Info.modID,
-                        EntityPS2Early3Bay.class, new PS2Early3Bay(),
-                        "PS2Early3Bay",
+                        EntityNP65Gondola.class, new NP65Gondola(),
+                        "NP65Gondola",
                         new float[]{-0.0f, 0.15F, 0.0F},
                         new float[]{0F, 180F, 180F},
                         null) {
@@ -73,28 +72,25 @@ public class EntityPS2Early3Bay extends AbstractStandardFreightCar {
                         String texturePath = "";
                         switch (colorAsString.toLowerCase()) {
                             case "black":
-                                texturePath = "textures/freightskins/PS2Early3Bay/PS2CD3Bay_NP";
+                                texturePath = "textures/freightskins/NP65Gondola/NP_65_Gondola";
                                 break;
                             case "red":
-                                texturePath = "textures/freightskins/PS2Early3Bay/PS2CD3Bay_RI";
+                                texturePath = "textures/freightskins/NP65Gondola/NP_65_Gondola_PG";
                                 break;
                             case "green":
-                                texturePath = "textures/freightskins/PS2Early3Bay/PS2CD3Bay_DRGW";
+                                texturePath = "textures/freightskins/NP65Gondola/NP_65_Gondola_Oak_Logs";
                                 break;
                             case "brown":
-                                texturePath = "textures/freightskins/PS2Early3Bay/PS2CD3Bay_BN";
+                                texturePath = "textures/freightskins/NP65Gondola/NP_65_Gondola_Birch_Logs";
                                 break;
                             case "blue":
-                                texturePath = "textures/freightskins/PS2Early3Bay/PS2CD3Bay_ATSF_Early";
+                                texturePath = "textures/freightskins/NP65Gondola/NP_65_Gondola_Spruce_Logs";
                                 break;
                             case "purple":
-                                texturePath = "textures/freightskins/PS2Early3Bay/PS2CD3Bay_ATSF_Late";
+                                texturePath = "textures/freightskins/NP65Gondola/NP_65_Gondola_Jungle_Logs";
                                 break;
                             case "cyan":
-                                texturePath = "textures/freightskins/PS2Early3Bay/PS2CD3Bay_UP";
-                                break;
-                            case "lightgrey":
-                                texturePath = "textures/freightskins/PS2Early3Bay/PS2CD3Bay_Generic";
+                                texturePath = "textures/freightskins/NP65Gondola/NP_65_Gondola_Acacia_Logs";
                                 break;
 
                         }

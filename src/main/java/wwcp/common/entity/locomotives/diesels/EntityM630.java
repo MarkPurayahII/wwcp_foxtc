@@ -19,8 +19,11 @@ public class EntityM630 extends DieselTrain
     public EntityM630(World world) {
         super(world, LiquidManager.dieselFilter());
         InsertTexture(0, "CP Action Red");
-        InsertTexture(1, "BC Rail Hockey Stick");
-        InsertTexture(2, "BC Rail Social Credit");
+        InsertTexture(1, "PGE Green");
+        InsertTexture(2, "BCOL Early");
+        InsertTexture(3, "BCOL");
+        InsertTexture(4, "BC Rail Hockey Stick");
+        InsertTexture(5, "BC Rail Social Credit");
 
     }
 
@@ -52,7 +55,7 @@ public class EntityM630 extends DieselTrain
     }
 
     public final SoundRecord sound = new SoundRecord(this.getClass(), " ", 1.0F, "ALCO_16_251C_Notch8", 0.65F, 28, "ALCO_16_251C_Idle", 0.65F, 30, false, "alco_bronzebell_3", 18,
-            new String[]{"nathan_m3h_2","nathan_k5l_3","nathan_k5l_3"});
+            new String[]{"nathan_m3h_2","nathan_k5l_3","nathan_k5l_3","nathan_k5l_3","nathan_k5l_3","nathan_k5l_3"});
     public SoundRecord getSoundRecord() {
         return sound;
     }
@@ -84,12 +87,20 @@ public class EntityM630 extends DieselTrain
                                 texturePath = "textures/locomotive/Diesel/M630/M630_CP";
                                 break;
                             case "red":
-                                texturePath = "textures/locomotive/Diesel/M630/M630_BCRAIL_Hockey";
+                                texturePath = "textures/locomotive/Diesel/M630/M630_PGE";
                                 break;
                             case "green":
+                                texturePath = "textures/locomotive/Diesel/M630/M630_BCOL";
+                                break;
+                            case "brown":
+                                texturePath = "textures/locomotive/Diesel/M630/M630_BCOL2";
+                                break;
+                            case "blue":
+                                texturePath = "textures/locomotive/Diesel/M630/M630_BCRAIL_Hockey";
+                                break;
+                            case "purple":
                                 texturePath = "textures/locomotive/Diesel/M630/M630_BCRAIL";
                                 break;
-
 
                         }
 

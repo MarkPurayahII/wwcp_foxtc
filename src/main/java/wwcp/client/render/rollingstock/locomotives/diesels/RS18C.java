@@ -28,7 +28,7 @@ public class RS18C extends ModelConverter //Same as Filename
 
 	public RS18C() //Same as Filename
 	{
-		bodyModel = new ModelRendererTurbo[479];
+		bodyModel = new ModelRendererTurbo[480];
 
 		initbodyModel_1();
 
@@ -386,21 +386,21 @@ public class RS18C extends ModelConverter //Same as Filename
 		bodyModel[343] = new ModelRendererTurbo(this, 33, 185, textureX, textureY); // Box 209
 		bodyModel[344] = new ModelRendererTurbo(this, 41, 185, textureX, textureY); // Box 558
 		bodyModel[345] = new ModelRendererTurbo(this, 49, 185, textureX, textureY); // Box 559
-		bodyModel[346] = new ModelRendererTurbo(this, 105, 185, textureX, textureY,"lamp"); // L_PGE_R
+		bodyModel[346] = new ModelRendererTurbo(this, 105, 185, textureX, textureY, "lamp"); // L_PGE_R
 		bodyModel[347] = new ModelRendererTurbo(this, 113, 185, textureX, textureY); // Box 28
-		bodyModel[348] = new ModelRendererTurbo(this, 129, 185, textureX, textureY,"lamp"); // L_PGE_R
-		bodyModel[349] = new ModelRendererTurbo(this, 137, 185, textureX, textureY,"lamp"); // L_PGE_R
+		bodyModel[348] = new ModelRendererTurbo(this, 129, 185, textureX, textureY, "lamp"); // L_PGE_R
+		bodyModel[349] = new ModelRendererTurbo(this, 137, 185, textureX, textureY, "lamp"); // L_PGE_R
 		bodyModel[350] = new ModelRendererTurbo(this, 153, 185, textureX, textureY); // Box 472
 		bodyModel[351] = new ModelRendererTurbo(this, 169, 185, textureX, textureY); // Box 473
-		bodyModel[352] = new ModelRendererTurbo(this, 185, 185, textureX, textureY,"lamp"); // L_PGE_F
-		bodyModel[353] = new ModelRendererTurbo(this, 409, 185, textureX, textureY,"lamp"); // L_PGE_F
+		bodyModel[352] = new ModelRendererTurbo(this, 185, 185, textureX, textureY, "lamp"); // L_PGE_F
+		bodyModel[353] = new ModelRendererTurbo(this, 409, 185, textureX, textureY, "lamp"); // L_PGE_F
 		bodyModel[354] = new ModelRendererTurbo(this, 385, 185, textureX, textureY); // Box 476
-		bodyModel[355] = new ModelRendererTurbo(this, 457, 185, textureX, textureY,"lamp"); // L_PGE_F
+		bodyModel[355] = new ModelRendererTurbo(this, 457, 185, textureX, textureY, "lamp"); // L_PGE_F
 		bodyModel[356] = new ModelRendererTurbo(this, 113, 161, textureX, textureY); // Box 480
 		bodyModel[357] = new ModelRendererTurbo(this, 481, 185, textureX, textureY); // Box 483
-		bodyModel[358] = new ModelRendererTurbo(this, 489, 185, textureX, textureY,"ditch"); // ditch
+		bodyModel[358] = new ModelRendererTurbo(this, 489, 185, textureX, textureY, "ditch"); // ditch
 		bodyModel[359] = new ModelRendererTurbo(this, 497, 185, textureX, textureY); // box
-		bodyModel[360] = new ModelRendererTurbo(this, 505, 185, textureX, textureY,"ditch"); // ditch
+		bodyModel[360] = new ModelRendererTurbo(this, 505, 185, textureX, textureY, "ditch"); // ditch
 		bodyModel[361] = new ModelRendererTurbo(this, 145, 193, textureX, textureY); // Box 544
 		bodyModel[362] = new ModelRendererTurbo(this, 369, 81, textureX, textureY); // Box 487
 		bodyModel[363] = new ModelRendererTurbo(this, 217, 89, textureX, textureY); // Box 488
@@ -422,8 +422,8 @@ public class RS18C extends ModelConverter //Same as Filename
 		bodyModel[379] = new ModelRendererTurbo(this, 186, 85, textureX, textureY); // Box 503
 		bodyModel[380] = new ModelRendererTurbo(this, 32, 202, textureX, textureY); // Box 504
 		bodyModel[381] = new ModelRendererTurbo(this, 46, 202, textureX, textureY); // Box 505
-		bodyModel[382] = new ModelRendererTurbo(this, 89, 161, textureX, textureY,"lamp"); // MF
-		bodyModel[383] = new ModelRendererTurbo(this, 97, 161, textureX, textureY,"lamp"); // MF
+		bodyModel[382] = new ModelRendererTurbo(this, 89, 161, textureX, textureY, "lamp"); // MF
+		bodyModel[383] = new ModelRendererTurbo(this, 97, 161, textureX, textureY, "lamp"); // MF
 		bodyModel[384] = new ModelRendererTurbo(this, 363, 201, textureX, textureY); // Box 516
 		bodyModel[385] = new ModelRendererTurbo(this, 187, 195, textureX, textureY); // Box 517
 		bodyModel[386] = new ModelRendererTurbo(this, 169, 205, textureX, textureY); // Box 519
@@ -462,11 +462,11 @@ public class RS18C extends ModelConverter //Same as Filename
 		bodyModel[419] = new ModelRendererTurbo(this, 0, 223, textureX, textureY); // Box 516
 		bodyModel[420] = new ModelRendererTurbo(this, 3, 215, textureX, textureY); // Box 422
 		bodyModel[421] = new ModelRendererTurbo(this, 57, 185, textureX, textureY); // Box 3
-		bodyModel[422] = new ModelRendererTurbo(this, 65, 185, textureX, textureY,"lamp"); // ML_PGE_G
-		bodyModel[423] = new ModelRendererTurbo(this, 73, 185, textureX, textureY,"lamp"); // ML_PGE_W
+		bodyModel[422] = new ModelRendererTurbo(this, 65, 185, textureX, textureY, "lamp"); // ML_PGE_G
+		bodyModel[423] = new ModelRendererTurbo(this, 73, 185, textureX, textureY, "lamp"); // ML_PGE_W
 		bodyModel[424] = new ModelRendererTurbo(this, 81, 185, textureX, textureY); // Box 3
-		bodyModel[425] = new ModelRendererTurbo(this, 89, 185, textureX, textureY,"lamp"); // ML_PGE_G
-		bodyModel[426] = new ModelRendererTurbo(this, 97, 185, textureX, textureY,"lamp"); // ML_PGE_W
+		bodyModel[425] = new ModelRendererTurbo(this, 89, 185, textureX, textureY, "lamp"); // ML_PGE_G
+		bodyModel[426] = new ModelRendererTurbo(this, 97, 185, textureX, textureY, "lamp"); // ML_PGE_W
 		bodyModel[427] = new ModelRendererTurbo(this, 25, 185, textureX, textureY); // Box 3
 		bodyModel[428] = new ModelRendererTurbo(this, 121, 185, textureX, textureY); // Box 3
 		bodyModel[429] = new ModelRendererTurbo(this, 113, 137, textureX, textureY); // Box 413
@@ -519,6 +519,7 @@ public class RS18C extends ModelConverter //Same as Filename
 		bodyModel[476] = new ModelRendererTurbo(this, 393, 195, textureX, textureY); // Box 477
 		bodyModel[477] = new ModelRendererTurbo(this, 393, 195, textureX, textureY); // Box 478
 		bodyModel[478] = new ModelRendererTurbo(this, 313, 168, textureX, textureY); // Box 479
+		bodyModel[479] = new ModelRendererTurbo(this, 377, 242, textureX, textureY); // Box 479
 
 		bodyModel[0].addBox(0F, 0F, 0F, 104, 2, 22, 0F); // Box 1
 		bodyModel[0].setRotationPoint(-52F, -1F, -11F);
@@ -1273,7 +1274,7 @@ public class RS18C extends ModelConverter //Same as Filename
 		bodyModel[249].setRotationPoint(-9.75F, -19.75F, -7F);
 
 		bodyModel[250].addShapeBox(0F, 0F, 0F, 3, 1, 1, 0F,-0.5F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, -0.5F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F, 0F, 0F, -0.25F); // Box 210
-		bodyModel[250].setRotationPoint(-24F, -23F, -0.75F);
+		bodyModel[250].setRotationPoint(-29F, -23F, -0.75F);
 
 		bodyModel[251].addShapeBox(0F, 0F, 0F, 2, 0, 2, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 11
 		bodyModel[251].setRotationPoint(-33F, -21F, -5F);
@@ -1976,6 +1977,9 @@ public class RS18C extends ModelConverter //Same as Filename
 
 		bodyModel[478].addShapeBox(0F, 0F, 0F, 0, 4, 2, 0F,0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F); // Box 479
 		bodyModel[478].setRotationPoint(56.5F, -5F, 2.75F);
+
+		bodyModel[479].addShapeBox(0F, 0F, 0F, 5, 11, 14, 0F,-0.75F, -0.75F, 0.15F, -0.75F, -0.75F, 0.15F, -0.75F, -0.75F, 0.15F, -0.75F, -0.75F, 0.15F, -0.75F, -1.75F, 0.15F, -0.75F, -1.75F, 0.15F, -0.75F, -1.75F, 0.15F, -0.75F, -1.75F, 0.15F); // Box 479
+		bodyModel[479].setRotationPoint(-13F, -14F, -7F);
 	}
 
 	Type_B bogieT = new Type_B();
