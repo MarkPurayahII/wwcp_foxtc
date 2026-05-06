@@ -66,7 +66,7 @@ public class EntityF7A extends DieselTrain
     }
 
     public final SoundRecord sound = new SoundRecord(this.getClass(), " ", 1.0F, "EMD_16_567B_Notch8", 0.45F, 28, "EMD_16_567B_Idle", 0.45F, 30, false, "emd_steelbell_3", 18,
-            new String[]{"leslie_a200_dual_1", "leslie_a200_dual_1","leslie_a200_dual_1","leslie_a200_dual_1","leslie_a200_dual_1","leslie_a200_dual_1","leslie_a200_dual_1","leslie_rs5t_1","leslie_a200_dual_1","leslie_a200_dual_1","leslie_a200_dual_1","leslie_a200_dual_1","leslie_rs5t","leslie_rs5t","leslie_rs5t","leslie_a200_dual_1"});
+            new String[]{"leslie_a200_dual_1", "leslie_a200_dual_1","leslie_a200_dual_1","leslie_a200_dual_1","leslie_a200_dual_1","leslie_a200_dual_1","leslie_a200_dual_1","leslie_rs5t_1","leslie_a200_dual_1","leslie_a200_dual_1","leslie_a200_dual_1","leslie_a200_dual_1","leslie_rs5t_1","leslie_rs5t_1","leslie_rs5t_1","leslie_a200_dual_1"});
     public SoundRecord getSoundRecord() {
         return sound;
     }

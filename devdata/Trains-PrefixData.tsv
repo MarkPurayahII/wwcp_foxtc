@@ -472,6 +472,7 @@ item.wwcp:MZII	MZII	wwcp.common.entity.locomotives.diesels.EntityMZII	DSB MZ II
 item.wwcp:MZIII	MZIII	wwcp.common.entity.locomotives.diesels.EntityMZIII	DSB MZ III
 item.wwcp:MZIV	MZIV	wwcp.common.entity.locomotives.diesels.EntityMZIV	DSB MZ IV
 item.tc:minecartMailWagon_DB	Mail Wagon DB	train.common.entity.rollingStock.workcart.EntityMailWagen_DB	mailWagen_DB
+item.wwcp:NP65Gondola	NP65Gondola	wwcp.common.entity.freight.EntityNP65Gondola	NP65Gondola
 item.wwcp:OpenTriLevelAutorack	OpenTriLevelAutorack	wwcp.common.entity.freight.EntityOpenTriLevelAutorack	OpenTriLevelAutorack
 item.wwcp:PS2Early3Bay	PS2Early3Bay	wwcp.common.entity.freight.EntityPS2Early3Bay	PS2Early3Bay
 item.wwcp:Paccar64Woodchip	Paccar64Woodchip	wwcp.common.entity.freight.EntityPaccar64Woodchip	Paccar64Woodchip
